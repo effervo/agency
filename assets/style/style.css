@@ -98,8 +98,8 @@ body {
   justify-content: center;
 }
 
-.wrap {
-  padding: 50px 240px;
+.wrapper {
+  padding: 70px 240px;
 }
 
 a {
@@ -188,7 +188,7 @@ header {
   background-color: #232323;
 }
 
-.header-wrap {
+.header-wrapper {
   padding: 20px 240px;
   display: flex;
   justify-content: space-between;
@@ -236,34 +236,35 @@ p {
   font-weight: 400;
 }
 
-.main-page {
+.main-block .wrapper {
   display: flex;
   flex-direction: column;
 }
-.main-page .main-page__info {
+.main-block .wrapper .main-block__info {
   display: flex;
   flex-direction: column;
 }
-.main-page .main-page__info .main-page__info_text {
+.main-block .wrapper .main-block__info .main-block__info_text {
   display: flex;
   align-items: flex-end;
   margin-bottom: 50px;
 }
-.main-page .main-page__info .main-page__info_text h1 {
+.main-block .wrapper .main-block__info .main-block__info_text h1 {
   min-width: 170px;
   margin-right: 50px;
 }
-.main-page .main-page__info .main-page__info_text p {
+.main-block .wrapper .main-block__info .main-block__info_text p {
   max-width: 420px;
 }
-.main-page .main__illustra {
+.main-block .main__illustra {
   margin-top: 70px;
+  position: relative;
 }
-.main-page .main__illustra .main__illustra-icon {
+.main-block .main__illustra .main__illustra-icon {
   position: absolute;
   z-index: 5;
-  margin-top: -72px;
-  margin-left: 1260px;
+  top: -70px;
+  right: 35px;
 }
 
 h1 {
@@ -421,21 +422,21 @@ p {
   font-weight: 400;
 }
 
-.clients-section {
+.clients-block {
   margin-bottom: 70px;
 }
-.clients-section h2 {
+.clients-block h2 {
   margin-bottom: 30px;
 }
 
-.clients__slider-container {
+.clients-slider__container {
   display: flex;
   align-items: baseline;
   justify-content: center;
   width: 100%;
 }
 
-.clients__slider_slide {
+.clients-slide {
   margin-right: 63px;
 }
 

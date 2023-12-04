@@ -11,8 +11,8 @@
 </head>
 <body>
 
-    <!-------------- header -------------->
-    <header class="header-wrap">
+    <!-------------- ! header -------------->
+    <header class="header-wrapper">
         <div class="header__logo">
             <img src="assets/img/logo.png" alt="">
         </div>
@@ -34,92 +34,151 @@
         </div>
     </header>
 
-    <!-------------- main page -------------->
-    <main class="main-page wrap">
-        <div class="main-page__info">
-            <div class="main-page__info_text">
-                <h1>Стартовый<br>интернет-маркетинг</h1>
-                <p>Поможем бизнесу найти новых клиентов в интернете. 
-                    Это выведет продажи на новый уровень и позволит компании масштабироваться</p>
+    <!-------------- ! main page -------------->
+    <section class="main-block">
+        <div class="wrapper">
+            <div class="main-block__info">
+                <div class="main-block__info_text">
+                    <h1>Стартовый<br>интернет-маркетинг</h1>
+                    <p>Поможем бизнесу найти новых клиентов в интернете. 
+                        Это выведет продажи на новый уровень и позволит компании масштабироваться</p>
+                </div>
+                <div class="">
+                    <button>Оставить заявку</button>
+                    
+                </div>
             </div>
-            <div class="">
-                <button>Оставить заявку</button>
-                
+    
+            <div class="main__illustra">
+    
+                <svg class="main__illustra-icon" width="143" height="144">
+                    <use xlink:href="#main-slide-icon"></use>
+                </svg> 
+    
+                <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг">
             </div>
         </div>
-
-        <div class="main__illustra">
-
-            <svg class="main__illustra-icon" width="143" height="144">
-                <use xlink:href="#main-slide-icon"></use>
-            </svg> 
-
-            <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг">
-        </div>
-    </main>
+    </section>
 
     <!-------------- about us -------------->
-    <div class="wrap">
-        <div class="aboutus__text">
-            <h2><span class="accent-color">С нами — легко</span> сделать первый шаг к увеличению узнаваемости 
-                бренда и расширению клиентской базы</h2>
+    <section class="info-block">
+        <div class="wrapper">
+            <div class="info-block__text">
+                <h2>
+                    <span class="accent-color">С нами — легко</span> сделать первый шаг к увеличению узнаваемости 
+                    бренда и расширению клиентской базы</h2>
+                </h2>
 
-            <p>Мы не стремимся быть лучше конкурентов, а хотим помочь нашим клиентам, поэтому предлагаем следующие преимущества:</p>
-        </div>
+                <p>
+                    Мы не стремимся быть лучше конкурентов, а хотим помочь нашим клиентам, поэтому предлагаем следующие преимущества:
+                </p>
+            </div>
 
-        <div class="aboutus__slides-container">
-            <div class="aboutus__slides-container_slide">
-                <h3>Глубокий анализ</h3>
-                <p>Проводим исследование рынка, конкурентов, продукта и составляем 
-                    портрет целевой аудитории. Это позволяет оптимизировать расходы на рекламу</p>
-            </div>
-            
-            <div class="aboutus__slides-container_slide">
-                <h3>Создание платформы</h3>
-                <p>По результатам анализа выбираем платформу для продажи товара или услуги. 
-                    Это может быть лендинг или аккаунт на Авито</p>
-            </div>
-            
-            <div class="aboutus__slides-container_slide">
-                <h3>Запуск каналов<br>продвижения</h3>
-                <p>Выбираем эффективные каналы в зависимости от вашей аудитории, например: 
-                    таргетированная реклама, поисковая оптимизация, прямая рассылка и другие</p>
+            <div class="info-block__content">
+                <div class="row">
+                    <div class="info-block__list-element">
+                        <h3>Глубокий анализ</h3>
+                        <p>Проводим исследование рынка, конкурентов, продукта и составляем 
+                        портрет целевой аудитории. Это позволяет оптимизировать расходы на рекламу</p>
+                    </div>
+
+                    <div class="info-block__list-element">
+                        <h3>Создание платформы</h3>
+                        <p>По результатам анализа выбираем платформу для продажи товара или услуги. 
+                        Это может быть лендинг или аккаунт на Авито</p>
+                    </div>
+
+                    <div class="info-block__list-element">
+                        <h3>Запуск каналов<br>продвижения</h3>
+                        <p>Выбираем эффективные каналы в зависимости от вашей аудитории, например: 
+                        таргетированная реклама, поисковая оптимизация, прямая рассылка и другие</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-------------- price -------------->
-    <div class="wrap">
-        <div class="price-container">
-            <div class="price-container__slide">
-                <h4>От 3 до 6 месяцев</h4>
-                <h2>От 14 до 30 дней</h2>
-                <p>в зависимости от сложности продукта</p>
-            </div>
+    <section class="info-block">
+        <div class="wrapper">
+            <div class="info-block__content">
+                <div class="row">
+                    <div class="info-block__list-element">
+                        <h4>От 3 до 6 месяцев</h4>
+                        <h2>От 14 до 30 дней</h2>
+                        <p>в зависимости от сложности продукта</p>
+                    </div>
 
-            <div class="price-container__slide">
-                <h4>От 119 990 до 359 990 ₽</h4>
-                <h2>От 59 400 до 179 200 ₽ </h2>
-                <p>дешевле, чем содержание своего отдела маркетинга.</p>
+                    <div class="info-block__list-element">
+                        <h4>От 119 990 до 359 990 ₽</h4>
+                        <h2>От 59 400 до 179 200 ₽ </h2>
+                        <p>дешевле, чем содержание своего отдела маркетинга.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-------------- cases - slider -------------->
-    <div class="wrap">
-        <div class="cases__header">
-            <h2>Как Стартовый Интернет-Маркетинг yже помог компаниям</h2>
+    <section class="info-block">
+        <div class="wrapper">
+            <div class="info-block__header">
+                <div class="info-block__title">
+                    <h2>Как Стартовый Интернет-Маркетинг yже помог компаниям</h2>
+                </div>
 
-            <div class="cases__slider-controls">
-                <!--  -->
+                <div class="info-block__slider-controls">
+
+                </div>
+            </div>
+            
+            <div class="info-block__slider-container">
+
+
+
             </div>
         </div>
-
-        <div class="cases__slider-container"></div>
-    </div>
+    </section>
 
     <!-------------- contact form -------------->
-    <div class="wrap">
+    <section class="contact-block">
+        <div class="wrapper">
+
+            <div class="contact-block__text">
+                <div class="contact-block__title">
+                    <h2>
+                        <span class="accent-color">Сделайте первый шаг —</span>
+                        <br>запишитесь на бесплатную консультацию
+                    </h2>
+                </div>
+                <div class="contact-block__desc">
+                    <p>
+                        Свяжемся с вами в течение часа в рабочее время
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <br>
+                    <input type="tel" placeholder="+7 (900) 000-00-00">
+                    <input type="email" placeholder="Example@mail.ru">
+                    <br>
+                    <input type="submit" class="btn" value="Оставить заявку">
+                </form>
+
+                <div class="contact-form__desc">
+                    <p>
+                        Нажимая кнопку “Заказать проект”, вы даете согласие на обработку своих персональных данных на основании политики конфиденциальности.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="wrapper">
         <div class="contact-form__text">
             <h2><span class="accent-color">Сделайте первый шаг —</span><br>запишитесь на бесплатную консультацию</h2>
             <p>Свяжемся с вами в течение часа в рабочее время</p>
@@ -138,20 +197,38 @@
     </div>
 
     <!-------------- clients - slider -------------->
-    <div class="clients-section">
-        <h2 class="wrap">Компании, которые нам доверяют</h2>
-
-        <div class="clients__slider-container">
-            <img class="clients__slider_slide" src="assets/img/clients-slider_1.png" alt="Стахановец">
-            <img class="clients__slider_slide" src="assets/img/clients-slider_2.png" alt="CityOIL">
-            <img class="clients__slider_slide" src="assets/img/clients-slider_3.png" alt="Модный свет">
-            <img class="clients__slider_slide" src="assets/img/clients-slider_4.png" alt="Свобода ремонта">
+    <section class="info-block clients-block">
+        <div class="info-block__title wrapper">
+            <h2>Компании, которые нам доверяют</h2>
         </div>
-    </div>
+
+        <div class="info-block__content">
+            
+            <div class="clients-slider__container">
+                <div class="clients-slide">
+                    <img src="assets/img/clients-slider_1.png" alt="Стахановец">
+                </div>
+    
+                <div class="clients-slide">
+                    <img src="assets/img/clients-slider_2.png" alt="CityOIL">
+                </div>
+    
+                <div class="clients-slide">
+                    <img src="assets/img/clients-slider_3.png" alt="Модный свет">
+                </div>
+    
+                <div class="clients-slide">
+                    <img src="assets/img/clients-slider_4.png" alt="Свобода ремонта">
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-------------- qa - accordeon -------------->
-    <div class="wrap qa-section">
-        <h2>Отвечаем на частые вопросы</h2>
+    <section class="qa-block">
+        <div class="wrapper">
+            <h2>Отвечаем на частые вопросы</h2>
 
         <!-- 1 -->
         <div class="qa-container">
@@ -160,7 +237,9 @@
                 <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
             </div>
 
-            <div class="qa-container__icon"><img src="assets/img/arrow.svg" alt=""></div>
+            <div class="qa-container__icon">
+                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
+            </div>
         </div>
 
         <!-- 2 -->
@@ -170,7 +249,9 @@
                 <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
             </div>
             
-            <div class="qa-container__icon"><img src="assets/img/arrow.svg" alt=""></div>
+            <div class="qa-container__icon">
+                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
+            </div>
         </div>
 
         <!-- 3 -->
@@ -180,7 +261,9 @@
                 <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
             </div>
             
-            <div class="qa-container__icon"><img src="assets/img/arrow.svg" alt=""></div>
+            <div class="qa-container__icon">
+                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
+            </div>
         </div>
 
         <!-- 4 -->
@@ -190,13 +273,15 @@
                 <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
             </div>
             
-            <div class="qa-container__icon"><img src="assets/img/arrow.svg" alt=""></div>
+            <div class="qa-container__icon">
+                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
+            </div>
         </div>
-    </div>
+    </section>
 
 
     <!-------------- footer -------------->
-    <footer class="wrap">
+    <footer class="wrapper">
 
         <!-- связаться -->
         <div class="footer__container">
@@ -236,6 +321,10 @@
         </div>
     </footer>
 
+    <!-------------- scripts -------------->
+    <script src=""></script>
+
+    <!-------------- svgs -------------->
     <svg>
         <!-- main slider -->
         <symbol id="main-slide-icon" fill="none">
@@ -249,6 +338,11 @@
             <rect width="52" height="52" fill="white" transform="translate(46 43.9849)"/>
             </clipPath>
             </defs>
+        </symbol>
+
+        <!-- arrow -->
+        <symbol id="arrow">
+                <path d="M28.4103 44.6236C28.1821 44.3951 28.0539 44.0853 28.0539 43.7623C28.0539 43.4394 28.1821 43.1296 28.4103 42.9011L40.9533 30.3561L8.14658 30.3561C7.82335 30.3561 7.51336 30.2277 7.2848 29.9991C7.05624 29.7705 6.92783 29.4605 6.92783 29.1373C6.92783 28.8141 7.05624 28.5041 7.2848 28.2755C7.51336 28.047 7.82335 27.9186 8.14658 27.9186L40.9533 27.9186L28.4103 15.3736C28.1951 15.1425 28.0779 14.837 28.0834 14.5212C28.089 14.2055 28.2169 13.9042 28.4402 13.6809C28.6635 13.4576 28.9647 13.3297 29.2805 13.3242C29.5962 13.3186 29.9018 13.4358 30.1328 13.6511L44.7578 28.2761C44.9861 28.5046 45.1143 28.8144 45.1143 29.1373C45.1143 29.4603 44.9861 29.7701 44.7578 29.9986L30.1328 44.6236C29.9043 44.8518 29.5946 44.98 29.2716 44.98C28.9486 44.98 28.6388 44.8518 28.4103 44.6236Z" fill="white"/>
         </symbol>
 
         <!-- tg icon -->

@@ -1,7 +1,18 @@
-@use "blocks/_colors.scss";
-@use "blocks/_fonts.scss";
+// primary styles
+@use "blocks/colors";
+@use "blocks/fonts";
 
-@use "blocks/_general.scss";
-@use "blocks/_header.scss";
+// landing styles
+@use "blocks/general";
+@use "blocks/header";
+@use "blocks/main";
+@use "blocks/aboutus";
+@use "blocks/price";
+@use "blocks/cases";
+@use "blocks/contactform";
+@use "blocks/clients";
+@use "blocks/qa";
+@use "blocks/footer";
 
-@use "blocks/_pagenotfound.scss";
+// other pages styles
+@use "blocks/pagenotfound";

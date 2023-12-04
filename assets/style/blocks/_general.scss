@@ -41,17 +41,18 @@ button {
     padding: 15px 40px;
     border-radius: 5px;
     border: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
 
     &:hover {
-        text-decoration: none;
         cursor: pointer;
-    }
-    &:active {
-        color: lighten($color: #ffffff, $amount: 50);
-        outline: none;
+        background-color: $AccentLight;
+        transition: 0.3s;
     }
     &:focus {
         outline: none;
+        background-color: $Accent;
+        transition: 0.3s;
     }
 }
 

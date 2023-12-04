@@ -35,11 +35,13 @@ a {
 }
 
 button, .btn {
+    font-family: $MainFont;
+    font-weight: $semiBold;
+    font-size: 19px;
     text-transform: uppercase;
     outline: none;
     background-color: $Accent;
     color: $MainWhite;
-    font: $MainFont $semiBold;
     padding: 15px 40px;
     border-radius: 5px;
     border: none;

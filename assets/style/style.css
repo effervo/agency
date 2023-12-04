@@ -109,11 +109,13 @@ a:active {
 }
 
 button, .btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
   text-transform: uppercase;
   outline: none;
   background-color: #FA6E37;
   color: #fff;
-  font: "Raleway", sans-serif 600;
   padding: 15px 40px;
   border-radius: 5px;
   border: none;
@@ -170,17 +172,20 @@ p {
 
 header {
   background-color: #232323;
-  display: flex;
 }
 
 .header-wrap {
   padding: 20px 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 .header__nav-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
 }
 .header__nav-list .header__nav-list_item:not(:last-child) {
   margin-right: 40px;

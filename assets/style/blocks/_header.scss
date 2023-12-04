@@ -3,18 +3,20 @@
 
 header {
     background-color: $MainDarkGrey;
-    display: flex;
 }
 
 .header-wrap {
     padding: 20px 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    font-weight: $semiBold;
 }
 
 .header__nav-list {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    // margin: 0 200px;
 
     .header__nav-list_item {
         &:not(:last-child) {

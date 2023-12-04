@@ -16,6 +16,25 @@
             margin-bottom: 30px;
         }
     }
+
+    a[href^="mailto:"],a[href^="tel:"] {
+        font-size: 17px;
+        color: $MainWhite;
+        transition: 0.2s;
+    
+        &:hover {
+            color: $AccentHover;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        &:active {
+            color: $AccentFocus;
+            text-decoration: none;
+        }
+    }
+    a[href^="tel:"] {
+        font-size: 19px;
+    }
 }
 
 .footer__icons {
@@ -48,16 +67,16 @@
 
 .footer__links_mini-text {
     font-size: 14px;
-        color: $Grey;
-        transition: 0.1s;
+    color: $Grey;
+    transition: 0.2s;
 
-        &:hover {
-            text-decoration: none;
-            color: $MainWhite;
-            transition: 0.1s;
-        }
-        &:active {
-            text-decoration: underline;
-            color: $MainWhite;
-        }
+    &:hover {
+        text-decoration: none;
+        color: $MainWhite;
+        transition: 0.2s;
+    }
+    &:active {
+        text-decoration: underline;
+        color: $MainWhite;
+    }
 }

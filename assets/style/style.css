@@ -92,6 +92,10 @@ body {
   color: #fff;
   font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wrap {
@@ -417,6 +421,24 @@ p {
   font-weight: 400;
 }
 
+.clients-section {
+  margin-bottom: 70px;
+}
+.clients-section h2 {
+  margin-bottom: 30px;
+}
+
+.clients__slider-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+}
+
+.clients__slider_slide {
+  margin-right: 63px;
+}
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;
@@ -446,6 +468,42 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: 17px;
   font-weight: 400;
+}
+
+.qa-section h2 {
+  margin-bottom: 70px;
+}
+
+.qa-container {
+  background-color: #232323;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.qa-container .qa-container__icon {
+  transform: rotate(45deg);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.qa-text h3 {
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+.qa-text h3:hover {
+  cursor: pointer;
+  color: #FA6E37;
+  transition: 0.2s;
+}
+.qa-text h3:active {
+  cursor: pointer;
+  color: #E2612E;
+}
+.qa-text p {
+  max-width: 54%;
 }
 
 h1 {
@@ -492,6 +550,23 @@ p {
 .footer__info .footer__info-item:not(:last-child) {
   margin-bottom: 30px;
 }
+.footer__info a[href^="mailto:"], .footer__info a[href^="tel:"] {
+  font-size: 17px;
+  color: #fff;
+  transition: 0.2s;
+}
+.footer__info a[href^="mailto:"]:hover, .footer__info a[href^="tel:"]:hover {
+  color: #F47746;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.footer__info a[href^="mailto:"]:active, .footer__info a[href^="tel:"]:active {
+  color: #E2612E;
+  text-decoration: none;
+}
+.footer__info a[href^="tel:"] {
+  font-size: 19px;
+}
 
 .footer__icons .footer__icons-button:hover {
   cursor: pointer;
@@ -517,12 +592,12 @@ p {
 .footer__links_mini-text {
   font-size: 14px;
   color: #999999;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 .footer__links_mini-text:hover {
   text-decoration: none;
   color: #fff;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 .footer__links_mini-text:active {
   text-decoration: underline;

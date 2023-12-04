@@ -17,6 +17,11 @@ body {
     color: $MainWhite;
     font-family: $MainFont;
     letter-spacing: 2px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .wrap {

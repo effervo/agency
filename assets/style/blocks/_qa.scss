@@ -1,2 +1,46 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
+
+.qa-section {
+    h2 {
+        margin-bottom: 70px;
+    }
+}
+
+.qa-container {
+    background-color: $MainDarkGrey;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .qa-container__icon {
+        transform: rotate(45deg);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+.qa-text {
+    h3 {
+        margin-bottom: 30px;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            color: $Accent;
+            transition: 0.2s;
+        }
+        &:active {
+            cursor: pointer;
+            color: $AccentFocus;
+        }
+    }
+
+    p {
+        max-width: 54%;
+    }
+}

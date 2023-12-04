@@ -1,2 +1,20 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
+
+.clients-section {
+    margin-bottom: 70px;
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.clients__slider-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+}
+
+.clients__slider_slide {
+    margin-right: 63px;
+}

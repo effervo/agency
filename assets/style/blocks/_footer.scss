@@ -1,23 +1,25 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.footer__contacts {
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 50px;
 }
 
-.footer__contacts_address {
-    .footer__contacts_address-item {
+.footer__info {
+    list-style-type: none;
+    
+    .footer__info-item {
         &:not(:last-child) {
-            margin-bottom: 6px;
+            margin-bottom: 30px;
         }
     }
 }
 
-.footer__contacts_socials {
-    .footer__contacts_socials__button {
+.footer__icons {
+    .footer__icons-button {
         &:hover {
             cursor: pointer;
             fill: $AccentHover;

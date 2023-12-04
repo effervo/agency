@@ -434,22 +434,25 @@ p {
   font-weight: 400;
 }
 
-.footer__contacts {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 50px;
 }
 
-.footer__contacts_address .footer__contacts_address-item:not(:last-child) {
-  margin-bottom: 6px;
+.footer__info {
+  list-style-type: none;
+}
+.footer__info .footer__info-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-.footer__contacts_socials .footer__contacts_socials__button:hover {
+.footer__icons .footer__icons-button:hover {
   cursor: pointer;
   fill: #F47746;
 }
-.footer__contacts_socials .footer__contacts_socials__button:not(:last-child) {
+.footer__icons .footer__icons-button:not(:last-child) {
   margin-right: 30px;
 }
 

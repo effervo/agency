@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-variant-numeric: lining-nums;
 }
 
 ::selection {
@@ -15,6 +16,7 @@ body {
     background-color: $MainBlack;
     color: $MainWhite;
     font-family: $MainFont;
+    letter-spacing: 2px;
 }
 
 .wrap {

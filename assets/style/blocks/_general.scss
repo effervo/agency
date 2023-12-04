@@ -1,0 +1,60 @@
+@import "_colors.scss"; 
+@import "_fonts.scss"; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $MainBlack;
+    color: $MainWhite;
+    font-family: $MainFont;
+}
+
+.wrap {
+    padding: 50px 240px;
+}
+
+a {
+    font: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: lighten($color: #ffffff, $amount: 50);
+    }
+    &:visited {
+        color: $Grey;
+    }
+}
+
+button {
+    text-transform: uppercase;
+    outline: none;
+    background-color: $Accent;
+    color: $MainWhite;
+    font: $MainFont $semiBold;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &:active {
+        color: lighten($color: #ffffff, $amount: 50);
+        outline: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.accent-color {
+    color: $Accent;
+}

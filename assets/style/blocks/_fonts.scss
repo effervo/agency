@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+$MainFont: Raleway, sans-serif;
+$bold: 700;
+$semiBold: 600;
+$med: 500;
+$regular: 400;
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font: 68pt $bold;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font: 44pt $med;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font: 30pt $med;
+}
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font: 19pt $semiBold;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font: 17pt $regular;
+
+    &.mini {
+        font: 14pt;
+    }
+}

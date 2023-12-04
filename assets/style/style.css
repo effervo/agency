@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+h1 {
+  font-family: "Raleway", sans-serif;
+  font: 68pt 700;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font: 44pt 500;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font: 30pt 500;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font: 19pt 600;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font: 17pt 400;
+}
+p.mini {
+  font: 14pt;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font: 68pt 700;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font: 44pt 500;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font: 30pt 500;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font: 19pt 600;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font: 17pt 400;
+}
+p.mini {
+  font: 14pt;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B1B1B;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+}
+
+.wrap {
+  padding: 50px 240px;
+}
+
+a {
+  font: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+}
+a:visited {
+  color: #999999;
+}
+
+button {
+  text-transform: uppercase;
+  outline: none;
+  background-color: #FA6E37;
+  color: #fff;
+  font: Raleway, sans-serif 600;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+}
+button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+button:active {
+  color: white;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+
+.accent-color {
+  color: #FA6E37;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font: 68pt 700;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font: 44pt 500;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font: 30pt 500;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font: 19pt 600;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font: 17pt 400;
+}
+p.mini {
+  font: 14pt;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font: 68pt 700;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font: 44pt 500;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font: 30pt 500;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font: 19pt 600;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font: 17pt 400;
+}
+p.mini {
+  font: 14pt;
+}
+
+.big-text {
+  font-size: 340px;
+}/*# sourceMappingURL=style.css.map */

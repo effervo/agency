@@ -141,6 +141,14 @@ button:focus, .btn:focus {
   color: #FA6E37;
 }
 
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;
@@ -498,6 +506,9 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.footer__links .footer__links-copyright {
+  font-size: 14px;
+}
 
 .footer__links_policy .footer__links_mini-text:not(:last-child) {
   margin-right: 15px;
@@ -506,6 +517,16 @@ p {
 .footer__links_mini-text {
   font-size: 14px;
   color: #999999;
+  transition: 0.1s;
+}
+.footer__links_mini-text:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.1s;
+}
+.footer__links_mini-text:active {
+  text-decoration: underline;
+  color: #fff;
 }
 
 h1 {

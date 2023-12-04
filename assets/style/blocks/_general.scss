@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #fa6e372f;
+}
+
 body {
     background-color: $MainBlack;
     color: $MainWhite;
@@ -18,17 +22,15 @@ body {
 }
 
 a {
-    font: inherit;
+    color: Grey;
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
+        color: $AccentHover;
     }
     &:active {
-        color: lighten($color: #ffffff, $amount: 50);
-    }
-    &:visited {
-        color: $Grey;
+        color: $AccentFocus;
     }
 }
 

@@ -2,21 +2,45 @@
 @import "_fonts.scss"; 
 
 .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
 }
 
 .footer__contacts_address {
+    .footer__contacts_address-item {
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
 }
 
 .footer__contacts_socials {
+    .footer__contacts_socials__button {
+        &:hover {
+            cursor: pointer;
+            fill: $AccentHover;
+        }
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
 
 .footer__links {
-    font-size: 14px;
     color: $Grey;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer__links_policy {   
+.footer__links_policy {
+    .footer__links_mini-text:not(:last-child) {
+        margin-right: 15px;
+    }
 }
 
-.footer__links_map {
+.footer__links_mini-text {
+    font-size: 14px;
+        color: $Grey;
 }

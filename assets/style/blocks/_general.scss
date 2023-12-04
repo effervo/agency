@@ -45,19 +45,17 @@ button, .btn {
     transition: 0.3s;
 
     &:hover {
+        color: $MainWhite;
         cursor: pointer;
-        background-color: $AccentLight;
+        background-color: $AccentHover;
         transition: 0.3s;
     }
     &:focus {
+        color: $MainWhite;
         outline: none;
-        background-color: $Accent;
+        background-color: $AccentFocus;
         transition: 0.3s;
     }
-}
-
-ul {
-    list-style-type: none;
 }
 
 .accent-color {

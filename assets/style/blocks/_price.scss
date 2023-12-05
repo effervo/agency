@@ -1,2 +1,22 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
+
+.info-block__subtext {
+    text-transform: uppercase;
+    margin: 40px 0 50px;
+
+    text-decoration: line-through $Accent 2px;
+}
+
+.info-block__desc-price {
+    color: $LightGrey;
+}
+
+.info-block__bg-price {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    max-width: 120px;
+    max-height: 120px;
+}

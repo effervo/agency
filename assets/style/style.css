@@ -336,7 +336,7 @@ p {
   position: relative;
 }
 
-.info-block__text-aboutus {
+.info-block__content {
   margin-right: 22px;
   z-index: 5;
 }
@@ -392,6 +392,25 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: 17px;
   font-weight: 400;
+}
+
+.info-block__subtext {
+  text-transform: uppercase;
+  margin: 40px 0 50px;
+  -webkit-text-decoration: line-through #FA6E37 2px;
+          text-decoration: line-through #FA6E37 2px;
+}
+
+.info-block__desc-price {
+  color: #CCCCCC;
+}
+
+.info-block__bg-price {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 h1 {

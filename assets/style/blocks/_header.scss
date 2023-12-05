@@ -17,11 +17,16 @@ header {
 .header__nav-list {
     list-style-type: none;
     display: flex;
-
-    .header__nav-list_item {
+    gap: 40px;
+}
+.header__nav-list_item {
+    transition: 0.2s;
+    &:hover {
         cursor: pointer;
-        &:not(:last-child) {
-            margin-right: 40px;
-        }
+        color: $AccentHover;
+        transition: 0.2s;
+    }
+    &:active {
+        color: $AccentFocus;
     }
 }

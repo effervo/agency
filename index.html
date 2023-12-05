@@ -54,10 +54,12 @@
                 <svg class="main__illustra-icon" width="143" height="144">
                     <use xlink:href="#main-slide-icon"></use>
                 </svg> 
-    
-                <div class="main__illustra-img">
-                    <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг">
-                </div>
+
+                <picture class="main__illustra-img">
+                    <source srcset="assets/img/main-slider.png" media="(orientation: portrait)" />
+                    <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг"/>
+                </picture>
+
             </div>
         </div>
     </section>
@@ -162,8 +164,8 @@
                 </div>
 
                 <div class="info-block__slider-controls">
-                    <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
-                    <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                    <svg class="arrow-control-left" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                    <svg class="arrow-control-right" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                 </div>
             </div>
             
@@ -176,13 +178,11 @@
                             <h3>Стахановец.рф</h3>
                         </div>
 
-                        <div class="slider-case__list">
-                            <ul>
-                                <li>Разработка сайта</li>
-                                <li>SEO</li>
-                                <li>Реклама в интернете</li>
-                            </ul>
-                        </div>
+                        <ul class="slider-case__list">
+                            <li class="slider-case__list-item">Разработка сайта</li>
+                            <li class="slider-case__list-item">SEO</li>
+                            <li class="slider-case__list-item">Реклама в интернете</li>
+                        </ul>
 
                         <div class="slider-case__btn">
                             <button class="btn">Оставить заявку</button>
@@ -196,7 +196,7 @@
 
                 
                 <!-- fulfillment -->
-                <div class="slider-case">
+                <!-- <div class="slider-case">
                     <div class="slider-case__info">
                         <div class="slider-case__title">
                             <h3>FULFILLMENT HOME</h3>
@@ -218,10 +218,10 @@
                     <div class="slider-case__img">
                         <img src="assets/img/cases_slide2.png" alt="FULFILLMENTHOME">
                     </div>
-                </div>
+                </div> -->
 
                 <!-- mr bolt -->
-                <div class="slider-case">
+                <!-- <div class="slider-case">
                     <div class="slider-case__info">
                         <div class="slider-case__title">
                             <h3>Mr.Bolt</h3>
@@ -243,7 +243,7 @@
                     <div class="slider-case__img">
                         <img src="assets/img/cases_slide3.png" alt="Mr.Bolt">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

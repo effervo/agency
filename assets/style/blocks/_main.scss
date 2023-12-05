@@ -28,6 +28,13 @@
     .main__illustra {
         margin-top: 70px;
         position: relative;
+        width: 100%;
+
+        .main__illustra-img {
+            img {
+                width: 100%;
+            }
+        }
 
         .main__illustra-icon {
             position: absolute;

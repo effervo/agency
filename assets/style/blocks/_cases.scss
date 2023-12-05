@@ -1,2 +1,55 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
+
+.info-block__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-block__slider-controls {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    // gap: 40px;
+}
+
+.arrow-control-left {
+    margin-right: 40px;
+    margin-top: 11px;
+    transform: rotate(180deg);
+}
+
+// 
+// 
+
+.slider-case {
+    display: flex;
+    justify-content: left;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 973px;
+}
+
+.slider-case__info {
+    max-width: 467px;
+    padding: 40px;
+    background-color: $MainDarkGrey;
+    border-radius: 10px 0 0 10px;
+}
+
+.slider-case__title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.slider-case__list {
+    list-style-type: disc $Accent;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 220px;
+}

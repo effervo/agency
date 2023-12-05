@@ -326,57 +326,65 @@
         </div>
     </section>
 
-    <!-------------- qa - accordeon -------------->
+    <!-------------- qa - accordion -------------->
     <section class="qa-block">
         <div class="wrapper">
-            <h2>Отвечаем на частые вопросы</h2>
+            <h2 class="qa-block__title">Отвечаем на частые вопросы</h2>
 
-        <!-- 1 -->
-        <div class="qa-container">
-            <div class="qa-text">
-                <h3>У меня уже есть оффлайн-бизнес, зачем мне онлайн-реклама?</h3>
-                <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
-            </div>
+        
+            <!-- 1 -->
+            <div class="accordion__container">
+                <div class="accordion-toggle">
+                    <h3 class="accordion-toggle__title">
+                    У меня уже есть оффлайн-бизнес, зачем мне онлайн-реклама?</h3>
+                
+                    <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                </div>
+                <div class="accordion-text" id="accordion-text">
+                    <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
+                </div>
+             </div>
 
-            <div class="qa-container__icon">
-                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
-            </div>
-        </div>
+             <!-- 2 -->
+             <div class="accordion__container">
+                <div class="accordion-toggle">
+                    <h3 class="accordion-toggle__title">
+                        Я не уверен в эффективности интернет-маркетинга для моей отрасли
+                    </h3>
+                
+                    <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                </div>
+                <div class="accordion-text" id="accordion-text">
+                 <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
+                </div>
+             </div>
 
-        <!-- 2 -->
-        <div class="qa-container">
-            <div class="qa-text">
-                <h3>Я не уверен в эффективности интернет-маркетинга для моей отрасли</h3>
-                <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
-            </div>
-            
-            <div class="qa-container__icon">
-                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
-            </div>
-        </div>
 
-        <!-- 3 -->
-        <div class="qa-container">
-            <div class="qa-text">
-                <h3>Я не знаю, с чего начать, это может быть сложно</h3>
-                <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
-            </div>
-            
-            <div class="qa-container__icon">
-                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
-            </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="qa-container">
-            <div class="qa-text">
-                <h3>Мы уже обращались в похожие компании, а результата не получили</h3>
-                <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
-            </div>
-            
-            <div class="qa-container__icon">
-                <svg width="52" height="53"><use xlink:href="#arrow"></use></svg>
-            </div>
+             <!-- 3 -->
+             <div class="accordion__container">
+                <div class="accordion-toggle">
+                    <h3 class="accordion-toggle__title">
+                        Я не знаю, с чего начать, это может быть сложно</h3>
+                    
+                    <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                </div>
+                <div class="accordion-text" id="accordion-text">
+                    <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
+                </div>
+             </div>
+             
+             <!-- 4 -->
+             <div class="accordion__container">
+                <div class="accordion-toggle">
+                    <h3 class="accordion-toggle__title">
+                        Мы уже обращались в похожие компании, а результата не получили</h3>
+                
+                        <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                </div>
+                <div class="accordion-text" id="accordion-text">
+                    <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
+                </div>
+             </div>
         </div>
     </section>
 
@@ -422,7 +430,7 @@
     </footer>
 
     <!-------------- scripts -------------->
-    <script src=""></script>
+    <script src="assets/scripts/accordion.js"></script>
 
     <!-------------- svgs -------------->
     <svg>

@@ -630,40 +630,47 @@ p {
   font-weight: 400;
 }
 
-.qa-section h2 {
-  margin-bottom: 70px;
+.qa-block__title {
+  margin-bottom: 30px;
 }
 
-.qa-container {
+.accordion__container {
   background-color: #232323;
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 30px;
+}
+
+.accordion-toggle {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.qa-container .qa-container__icon {
-  transform: rotate(45deg);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.qa-text h3 {
-  margin-bottom: 30px;
-  transition: 0.2s;
-}
-.qa-text h3:hover {
-  cursor: pointer;
+.accordion-toggle:hover {
   color: #FA6E37;
   transition: 0.2s;
 }
-.qa-text h3:active {
-  cursor: pointer;
-  color: #E2612E;
+
+.accordion-toggle__icon {
+  transform: rotate(45deg);
 }
-.qa-text p {
-  max-width: 54%;
+.accordion-toggle__icon:hover {
+  fill: #FA6E37;
+  transition: 0.2s;
+}
+
+.accordion-text {
+  display: none;
+  overflow: hidden;
+  margin-top: 30px;
+  max-width: 55%;
+}
+
+.rotate {
+  transform: rotate(45deg);
 }
 
 h1 {

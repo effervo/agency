@@ -55,7 +55,9 @@
                     <use xlink:href="#main-slide-icon"></use>
                 </svg> 
     
-                <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг">
+                <div class="main__illustra-img">
+                    <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг">
+                </div>
             </div>
         </div>
     </section>
@@ -116,13 +118,13 @@
         </div>
     </section>
 
-    <!-------------- price -------------->
+    <!-------------- ! price -------------->
     <section class="info-block">
         <div class="wrapper">
             <div class="info-block__content">
                 <div class="row">
                     <div class="info-block__element">
-                        <div class="info-block__content">
+                        <div class="info-block__">
                             <h4 class="info-block__subtext">От 3 до 6 месяцев</h4>
                             <h2 class="info-block__title">От 14 до 30 дней</h2>
                             <p class="info-block__desc info-block__desc-price">в зависимости от сложности продукта</p>
@@ -246,41 +248,46 @@
         </div>
     </section>
 
-    <!-------------- contact form -------------->
+    <!-------------- ! contact form -------------->
     <section class="contact-block">
         <div class="wrapper">
+            <div class="contact-block__content">
 
-            <div class="contact-block__text">
-                <div class="contact-block__title">
-                    <h2>
-                        <span class="accent-color">Сделайте первый шаг —</span>
-                        <br>запишитесь на бесплатную консультацию
-                    </h2>
+                <div class="contact-block__text">
+                    <div class="contact-block__title">
+                        <h2>
+                            <span class="accent-color">Сделайте первый шаг —</span>
+                            <br>запишитесь на бесплатную консультацию
+                        </h2>
+                    </div>
+                    <div class="contact-block__desc">
+                        <p>
+                            Свяжемся с вами в течение часа в рабочее время
+                        </p>
+                    </div>
                 </div>
-                <div class="contact-block__desc">
-                    <p>
-                        Свяжемся с вами в течение часа в рабочее время
-                    </p>
-                </div>
-            </div>
+    
+                <div class="contact-form">
+                    <form action="">
+                        <div class="contact-form__input contact-form__input_wide">
+                            <input class="input" type="text" placeholder="ИМЯ">
+                        </div>
 
-            <div class="contact-form">
-                <form action="">
-                    <div class="contact-form__input">
-                        <input type="text" placeholder="Имя">
-                    </div>
-                    <div class="contact-form__input">
-                        <input type="tel" placeholder="+7 (900) 000-00-00">
-                        <input type="email" placeholder="Example@mail.ru">
-                    </div>
-                    <div class="contact-form__input">
-                        <input type="submit" class="btn" value="Оставить заявку">
-                    </div>
-                </form>
-
-                <div class="contact-form__desc">
-                    <p>
-                        Нажимая кнопку “Заказать проект”, вы даете согласие на обработку своих персональных данных на основании политики конфиденциальности.
+                        <div class="contact-form__input-container">
+                            <div class="contact-form__input">
+                                <input class="input" type="tel" placeholder="+7 (900) 000-00-00">
+                            </div>
+                            <div class="contact-form__input">
+                                <input class="input" type="email" placeholder="Example@mail.ru">
+                            </div>
+                        </div>
+                        <div class="contact-form__input">
+                            <input type="submit" class="contact-form__btn btn" value="Оставить заявку">
+                        </div>
+                    </form>
+    
+                    <p class="contact-form__desc">
+                        Нажимая кнопку “Заказать проект”, вы даете согласие<br>на обработку своих персональных данных на основании политики конфиденциальности.
                     </p>
                 </div>
             </div>
@@ -296,6 +303,9 @@
         <div class="info-block__content">
             
             <div class="clients-slider__container">
+                <div class="clients-slide">
+                    <img src="assets/img/clients-slider_0.png" alt="LPM">
+                </div>
                 <div class="clients-slide">
                     <img src="assets/img/clients-slider_1.png" alt="Стахановец">
                 </div>

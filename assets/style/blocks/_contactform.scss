@@ -1,2 +1,77 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
+
+.contact-block__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-block__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-block__title {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form__input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.input {
+    font-family: inherit;
+    font-size: 17px;
+    margin: 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $MainWhite;
+    width: max-content;
+    background: none;
+    color: $MainWhite;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $DarkGrey;
+        transition: 0.2s;
+    }
+
+    &:focus {
+        outline: none;
+        background-color: $DarkGrey;
+    }
+
+    &[value] {
+        color: $Grey;
+    }
+}
+
+.contact-form__input {
+    flex: 1 1 0px;
+    min-width: 340px;
+    width: 100%;
+}
+.contact-form__input_wide {
+    width: 709px;
+}
+
+.contact-form__btn {
+    margin: 10px 0;
+}
+
+.contact-form__desc {
+    color: $LightGrey;
+    font-size: 14px;
+}   

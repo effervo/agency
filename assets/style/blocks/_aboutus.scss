@@ -1,2 +1,14 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
+
+.info-block__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 70px;
+
+    p {
+        color: $Grey;
+        margin: 0 100px 0 40px;
+    }
+}

@@ -6,23 +6,24 @@
     .wrapper {
         display: flex;
         flex-direction: column;
-        
         .main-block__info {
             display: flex;
             flex-direction: column;
 
             .main-block__info_text {
                 display: flex;
+                justify-content: space-between;
                 align-items: flex-end;
                 margin-bottom: 50px;
 
                 h1 {
-                    min-width: 170px;
-                    margin-right: 50px;
+                    // min-width: 170px;
+                    // margin-right: 50px;
                 }
 
                 p {
-                    max-width: 420px;
+                    max-width: 412px;
+                    margin: 0 100px 12px 50px;
                 }
             }
         }

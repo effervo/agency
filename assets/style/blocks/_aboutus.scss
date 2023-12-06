@@ -1,59 +1,63 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.info-block__text {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 70px;
-
-    p {
-        color: $Grey;
-        margin: 0 100px 0 40px;
+.info-block {
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 70px;
+    
+        &-desc {
+            color: $Grey;
+            margin: 0 100px 0 40px;
+        }
     }
-}
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    &__element {
+        background-color: $MainDarkGrey;
+        border: 1px solid $DarkGrey;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        flex: 1 1 0px;
+        position: relative;
+    }
+
+    &__content {
+        margin-right: 22px;
+        z-index: 5;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        color: $MainWhite;
+        margin-right: 5px;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+    }
     
 }
 
-.info-block__element {
-    background-color: $MainDarkGrey;
-    border: 1px solid $DarkGrey;
-    border-radius: 10px;
-    backdrop-filter: blur(2px);
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    flex: 1 1 0px;
-    position: relative;
-}
-
-.info-block__content {
-    margin-right: 22px;
-    z-index: 5;
-}
-
-.info-block__title {
-    margin-bottom: 30px;
-}
-
-.info-block__desc {
-    color: $MainWhite;
-    margin-right: 5px;
-}
-
-.info-block__bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-}
-
 // мобильная версия
+
+@media (max-width: 1024px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 576px) {
     .row {
         display: flex;

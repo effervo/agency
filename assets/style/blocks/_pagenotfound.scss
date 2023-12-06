@@ -8,18 +8,18 @@
     align-items: center;
     text-align: center;
 
-    svg {
+    &__cover {
         margin: 100px 0;
         max-height: 340px;
     }
 
-    h1 {
+    &__title {
         font-size: 68px;
         line-height: 80px;
         text-transform: uppercase;
     }
 
     .pnf-main__item {
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
 }

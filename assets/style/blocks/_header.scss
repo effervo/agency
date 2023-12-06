@@ -17,13 +17,18 @@
 
         &_item {
             transition: 0.2s;
-            &:hover {
-                cursor: pointer;
-                color: $AccentHover;
-                transition: 0.2s;
-            }
-            &:active {
-                color: $AccentFocus;
+
+            &-link {
+                color: $MainWhite;
+                &:hover {
+                    cursor: pointer;
+                    color: $AccentHover;
+                    transition: 0.2s;
+                    text-decoration: none;
+                }
+                &:active {
+                    color: $AccentFocus;
+                }
             }
         }
     }

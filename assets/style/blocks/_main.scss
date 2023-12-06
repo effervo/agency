@@ -1,42 +1,44 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.main-block {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
 
-    .wrapper {
+
+.main-block {
+    &__info {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
-        .main-block__info {
+        &_text {
             display: flex;
-            flex-direction: column;
-
-            .main-block__info_text {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                margin-bottom: 50px;
-
-                p {
-                    max-width: 412px;
-                    margin: 0 100px 12px 50px;
-                }
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            &-desc {
+                max-width: 412px;
+                margin: 0 100px 12px 50px;
             }
         }
     }
 
-    .main__illustra {
+    &__illustra {
         margin-top: 70px;
         position: relative;
         width: 100%;
-
-        .main__illustra-img {
+        &-img {
             img {
                 width: 100%;
             }
         }
-
-        .main__illustra-icon {
+        &-icon {
             position: absolute;
             z-index: 5;
             top: -70px;

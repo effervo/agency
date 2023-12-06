@@ -1,14 +1,7 @@
-var acc = document.getElementsByClassName("accordion-toggle");
-var i;
+const faqs = document.querySelectorAll (".qa-block__accordion-container");
 
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+faqs.forEach((faq) => {
+  faq.addEventListener('click', () => {
+    faq.classList.toggle('active');
+  })
+})

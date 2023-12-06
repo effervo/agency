@@ -1,43 +1,45 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.qa-block__title {
-    margin-bottom: 30px;
-}
-
-.accordion__container {
-    background-color: $MainDarkGrey;
-    border-radius: 5px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.accordion-toggle {
-    cursor: pointer;
-    width: 100%;
-    transition: 0.4s;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    &:hover {
-        color: $Accent;
-        transition: 0.2s;
+.qa-block {
+    &__title {
+        margin-bottom: 30px;
     }
 }
 
-.accordion-toggle__icon {
-    transform: rotate(45deg);
-    &:hover {
-        fill: $Accent;
-        transition: 0.2s;
+.qa-block__accordion {
+    &-container {
+        background-color: $MainDarkGrey;
+        border-radius: 5px;
+        padding: 30px;
+        margin-bottom: 30px;
     }
-}
 
-.accordion-text {
-    display: none;
-    overflow: hidden;
-    margin-top: 30px;
-    max-width: 55%;
+    &-toggle {
+        cursor: pointer;
+        width: 100%;
+        transition: 0.4s;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &:hover {
+            color: $Accent;
+            transition: 0.2s;
+        }
+        &__icon {
+            transform: rotate(45deg);
+            &:hover {
+                fill: $Accent;
+                transition: 0.2s;
+            }
+        }
+    }
+    &-text {
+        display: none;
+        overflow: hidden;
+        margin-top: 30px;
+        max-width: 55%;
+    }
 }
 
 .rotate {

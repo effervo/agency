@@ -18,13 +18,23 @@
         </div>
 
         <div class="header__nav">
-            <ol class="header__nav-list">
-                <li class="header__nav-list_item">О компании</li>
-                <li class="header__nav-list_item">Услуги</li>
-                <li class="header__nav-list_item">Кейсы</li>
-                <li class="header__nav-list_item">Блог</li>
-                <li class="header__nav-list_item">Контакты</li>
-            </ol>
+            <ul class="header__nav-list">
+                <li class="header__nav-list_item">
+                    <a class="header__nav-list_item-link" href="#">О компании</a>
+                </li>
+                <li class="header__nav-list_item">
+                    <a class="header__nav-list_item-link" href="#">Услуги</a>
+                </li>
+                <li class="header__nav-list_item">
+                    <a class="header__nav-list_item-link" href="#">Кейсы</a>
+                </li>
+                <li class="header__nav-list_item">
+                    <a class="header__nav-list_item-link" href="#">Блог</a>
+                </li>
+                <li class="header__nav-list_item">
+                    <a class="header__nav-list_item-link" href="#">Контакты</a>
+                </li>
+            </ul>
         </div>
 
         <div class="header__btn">
@@ -39,8 +49,8 @@
         <div class="wrapper">
             <div class="main-block__info">
                 <div class="main-block__info_text">
-                    <h1>Стартовый<br>интернет-маркетинг</h1>
-                    <p>Поможем бизнесу найти новых клиентов в интернете. 
+                    <h1 class="main-block__info_text-title">Стартовый<br>интернет-маркетинг</h1>
+                    <p class="main-block__info_text-desc">Поможем бизнесу найти новых клиентов в интернете. 
                         Это выведет продажи на новый уровень и позволит компании масштабироваться</p>
                 </div>
                 <div class="">
@@ -49,13 +59,13 @@
                 </div>
             </div>
     
-            <div class="main__illustra">
+            <div class="main-block__illustra">
     
-                <svg class="main__illustra-icon" width="143" height="144">
+                <svg class="main-block__illustra-icon" width="143" height="144">
                     <use xlink:href="#main-slide-icon"></use>
                 </svg> 
 
-                <picture class="main__illustra-img">
+                <picture class="main-block__illustra-img">
                     <source srcset="assets/img/main-slider.png" media="(orientation: portrait)" />
                     <img src="assets/img/main-slider.png" alt="Глубокий анализ. Стартовый интернет-маркетинг"/>
                 </picture>
@@ -68,18 +78,19 @@
     <section class="info-block">
         <div class="wrapper">
             <div class="info-block__text">
-                <h2>
+                <h2 class="info-block__text-title">
                     <span class="accent-color">С нами — легко</span> сделать первый шаг к увеличению узнаваемости 
                     бренда и расширению клиентской базы</h2>
                 </h2>
 
-                <p>
+                <p class="info-block__text-desc">
                     Мы не стремимся быть лучше конкурентов, а хотим помочь нашим клиентам, поэтому предлагаем следующие преимущества:
                 </p>
             </div>
 
-            <div class="info-block__content">
+            <div class="info-block__slides">
                 <div class="row">
+
                     <div class="info-block__element">
                         <div class="info-block__content">
                             <h3 class="info-block__title">Глубокий анализ</h3>
@@ -123,6 +134,7 @@
     <!-------------- ! price -------------->
     <section class="info-block">
         <div class="wrapper">
+            
             <div class="info-block__content">
                 <div class="row">
                     <div class="info-block__element">
@@ -286,55 +298,55 @@
 
         
             <!-- 1 -->
-            <div class="accordion__container">
-                <div class="accordion-toggle">
-                    <h3 class="accordion-toggle__title">
+            <div class="qa-block__accordion-container">
+                <div class="qa-block__accordion-toggle">
+                    <h3 class="qa-block__accordion-toggle__title">
                     У меня уже есть оффлайн-бизнес, зачем мне онлайн-реклама?</h3>
                 
-                    <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                    <svg class="qa-block__accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                 </div>
-                <div class="accordion-text" id="accordion-text">
+                <div class="qa-block__accordion-text" id="accordion-text">
                     <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
                 </div>
              </div>
 
              <!-- 2 -->
-             <div class="accordion__container">
-                <div class="accordion-toggle">
-                    <h3 class="accordion-toggle__title">
+             <div class="qa-block__accordion-container">
+                <div class="qa-block__accordion-toggle">
+                    <h3 class="qa-block__accordion-toggle__title">
                         Я не уверен в эффективности интернет-маркетинга для моей отрасли
                     </h3>
                 
-                    <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                    <svg class="qa-block__accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                 </div>
-                <div class="accordion-text" id="accordion-text">
+                <div class="qa-block__accordion-text" id="accordion-text">
                  <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
                 </div>
              </div>
 
 
              <!-- 3 -->
-             <div class="accordion__container">
-                <div class="accordion-toggle">
-                    <h3 class="accordion-toggle__title">
+             <div class="qa-block__accordion-container">
+                <div class="qa-block__accordion-toggle">
+                    <h3 class="qa-block__accordion-toggle__title">
                         Я не знаю, с чего начать, это может быть сложно</h3>
                     
-                    <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                    <svg class="qa-block__accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                 </div>
-                <div class="accordion-text" id="accordion-text">
+                <div class="qa-block__accordion-text" id="accordion-text">
                     <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
                 </div>
              </div>
              
              <!-- 4 -->
-             <div class="accordion__container">
-                <div class="accordion-toggle">
-                    <h3 class="accordion-toggle__title">
+             <div class="qa-block__accordion-container">
+                <div class="qa-block__accordion-toggle">
+                    <h3 class="qa-block__accordion-toggle__title">
                         Мы уже обращались в похожие компании, а результата не получили</h3>
                 
-                        <svg class="accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                        <svg class="qa-block__accordion-toggle__icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                 </div>
-                <div class="accordion-text" id="accordion-text">
+                <div class="qa-block__accordion-text" id="accordion-text">
                     <p>Интернет-маркетинг поможет привлечь новых клиентов, увеличить узнаваемость бренда и расширить географию бизнеса.</p>
                 </div>
              </div>

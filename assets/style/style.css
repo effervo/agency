@@ -451,6 +451,10 @@ p {
   margin-bottom: 20px;
 }
 
+.swiper {
+  width: 100%;
+}
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;

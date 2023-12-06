@@ -758,11 +758,10 @@ p {
   align-items: flex-end;
   margin-bottom: 50px;
 }
-
 .footer__info {
   list-style-type: none;
 }
-.footer__info .footer__info-item:not(:last-child) {
+.footer__info-item:not(:last-child) {
   margin-bottom: 30px;
 }
 .footer__info a[href^="mailto:"], .footer__info a[href^="tel:"] {
@@ -782,28 +781,27 @@ p {
 .footer__info a[href^="tel:"] {
   font-size: 19px;
 }
-
-.footer__icons .footer__icons-button:hover {
+.footer__info__icons {
+  fill: #CCCCCC;
+}
+.footer__info__icons-button:hover {
   cursor: pointer;
   fill: #F47746;
 }
-.footer__icons .footer__icons-button:not(:last-child) {
+.footer__info__icons-button:not(:last-child) {
   margin-right: 30px;
 }
-
 .footer__links {
   color: #999999;
   display: flex;
   justify-content: space-between;
 }
-.footer__links .footer__links-copyright {
+.footer__links-copyright {
   font-size: 14px;
 }
-
 .footer__links_policy .footer__links_mini-text:not(:last-child) {
   margin-right: 15px;
 }
-
 .footer__links_mini-text {
   font-size: 14px;
   color: #999999;

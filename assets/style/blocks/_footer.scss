@@ -1,82 +1,87 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 50px;
-}
 
-.footer__info {
-    list-style-type: none;
-    
-    .footer__info-item {
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+.footer {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
     }
 
-    a[href^="mailto:"],a[href^="tel:"] {
-        font-size: 17px;
-        color: $MainWhite;
-        transition: 0.2s;
-    
-        &:hover {
-            color: $AccentHover;
-            text-decoration: none;
+    &__info {
+        list-style-type: none;
+        
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        a[href^="mailto:"], a[href^="tel:"] {
+            font-size: 17px;
+            color: $MainWhite;
             transition: 0.2s;
+        
+            &:hover {
+                color: $AccentHover;
+                text-decoration: none;
+                transition: 0.2s;
+            }
+            &:active {
+                color: $AccentFocus;
+                text-decoration: none;
+            }
         }
-        &:active {
-            color: $AccentFocus;
-            text-decoration: none;
+        a[href^="tel:"] {
+            font-size: 19px;
         }
-    }
-    a[href^="tel:"] {
-        font-size: 19px;
-    }
-}
 
-.footer__icons {
-    .footer__icons-button {
-        &:hover {
-            cursor: pointer;
-            fill: $AccentHover;
+        &__icons {
+            fill: $LightGrey;
+            &-button {
+                &:hover {
+                    cursor: pointer;
+                    fill: $AccentHover;
+                }
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
         }
-        &:not(:last-child) {
-            margin-right: 30px;
+
+    }
+    &__links {
+        color: $Grey;
+        display: flex;
+        justify-content: space-between;
+
+        &-copyright {
+            font-size: 14px;
         }
-    }
-}
 
-.footer__links {
-    color: $Grey;
-    display: flex;
-    justify-content: space-between;
+        &_policy {
+            .footer__links_mini-text:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
 
-    .footer__links-copyright {
-        font-size: 14px;
-    }
-}
-
-.footer__links_policy {
-    .footer__links_mini-text:not(:last-child) {
-        margin-right: 15px;
-    }
-}
-
-.footer__links_mini-text {
-    font-size: 14px;
-    color: $Grey;
-    transition: 0.2s;
-
-    &:hover {
-        text-decoration: none;
-        color: $MainWhite;
-        transition: 0.2s;
-    }
-    &:active {
-        text-decoration: underline;
-        color: $MainWhite;
+        &_mini-text {
+            font-size: 14px;
+            color: $Grey;
+            transition: 0.2s;
+    
+            &:hover {
+                text-decoration: none;
+                color: $MainWhite;
+                transition: 0.2s;
+            }
+            &:active {
+                text-decoration: underline;
+                color: $MainWhite;
+            }
+        }
     }
 }

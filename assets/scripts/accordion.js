@@ -1,4 +1,4 @@
-const faqs = document.querySelectorAll (".qa-block__accordion-container");
+const faqs = document.querySelectorAll (".qa-block__faq");
 
 faqs.forEach((faq) => {
   faq.addEventListener('click', () => {

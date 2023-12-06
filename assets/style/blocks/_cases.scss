@@ -1,22 +1,52 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.info-block__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
+.info-block {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 60px;
+        position: relative;
+    }
+}
+
+.swiper-button-prev {
+    left: auto;
+    right: 70px;
+    color: $MainWhite;
+    &:hover{
+        color: $AccentHover;
+    }
+    &:focus{
+        color: $AccentFocus;
+    }
+    
+}
+.swiper-button-next {
+    margin-left: 50px;
+    color: $MainWhite;
+    &:hover{
+        color: $AccentHover;
+    }
+    &:focus{
+        color: $AccentFocus;
+    }
 }
 
 .swiper {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &-slide{
         display: flex;
         justify-content: space-between;
         border-radius: 10px;
-        background-color: $primaryLighter;
+        background-color: $MainDarkGrey;
+        border: 0;
         border-radius: 10px;
     }
 
@@ -24,10 +54,48 @@
         padding: 40px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        min-width: 467px;
+        text-align: left;
     }
 
-    &-button-prev {
-        transform: rotate(180deg);
+    &-info {
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 220px;
+            &-item {
+                list-style-position: inside;
+                background-image: url(../../img/list.png);
+                background-position: 0 0;
+                background-size: 12px 12px;
+                background-repeat: no-repeat;
+
+                &::marker{
+                    color: $Accent;
+                }
+            }
+        }
+
+        &__btn {
+            width: min-content;
+        }
+
+    }
+    
+    &-img {
+        position: relative;
+        width: 100%;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 10px 10px 0;
+        }
     }
 }

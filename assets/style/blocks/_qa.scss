@@ -17,22 +17,25 @@
     &__question {
         cursor: pointer;
         width: 100%;
-        transition: 0.4s;
+        transition: 0.2s;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        
-        &-title:hover {
-            color: $Accent;
-            transition: 0.5s
-        }
-        
+
         &-icon {
             transform: rotate(45deg);
-            &:hover {
-                fill: $Accent;
-                transition: 0.5s
-            }
+            fill: $MainWhite;
+        }
+
+        &:hover &-icon{
+            fill: $Accent;
+            color: $Accent;
+            transition: 0.2s
+        }
+        
+        &:hover &-title {
+            color: $Accent;
+            transition: 0.2s
         }
     }
 

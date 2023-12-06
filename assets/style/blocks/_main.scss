@@ -1,11 +1,6 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
 .row {
     display: flex;
     justify-content: space-between;

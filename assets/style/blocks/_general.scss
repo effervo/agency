@@ -28,6 +28,12 @@ body {
     padding: 70px 240px;
 }
 
+.svg {
+    &__invisible {
+        max-height: 0;
+    }
+}
+
 a {
     color: Grey;
     text-decoration: none;
@@ -73,9 +79,6 @@ button, .btn {
     color: $Accent;
 }
 
-.visible {
-    display: block;
-}
-.invisible {
-    display: none;
+img {
+    user-select: none;
 }

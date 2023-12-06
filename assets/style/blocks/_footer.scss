@@ -3,6 +3,7 @@
 
 
 .footer {
+    padding: 70px 240px;
 
     &__container {
         display: flex;
@@ -13,14 +14,11 @@
 
     &__info {
         list-style-type: none;
-        
-        &-item {
-            &:not(:last-child) {
-                margin-bottom: 30px;
-            }
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
-        a[href^="mailto:"], a[href^="tel:"] {
+        &-item_link {
             font-size: 17px;
             color: $MainWhite;
             transition: 0.2s;
@@ -34,25 +32,24 @@
                 color: $AccentFocus;
                 text-decoration: none;
             }
-        }
-        a[href^="tel:"] {
-            font-size: 19px;
-        }
 
-        &__icons {
-            fill: $LightGrey;
-            &-button {
-                &:hover {
-                    cursor: pointer;
-                    fill: $AccentHover;
-                }
-                &:not(:last-child) {
-                    margin-right: 30px;
-                }
+            &:first-child {
+                font-size: 19px;
             }
         }
-
     }
+    &__icons {
+        display: flex;
+        gap: 30px;
+
+        &-button {
+            &:hover {
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
     &__links {
         color: $Grey;
         display: flex;
@@ -62,7 +59,7 @@
             font-size: 14px;
         }
 
-        &_policy {
+        &-policy {
             .footer__links_mini-text:not(:last-child) {
                 margin-right: 15px;
             }

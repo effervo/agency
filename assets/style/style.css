@@ -102,6 +102,10 @@ body {
   padding: 70px 240px;
 }
 
+.svg__invisible {
+  max-height: 0;
+}
+
 a {
   color: Grey;
   text-decoration: none;
@@ -145,12 +149,10 @@ button:focus, .btn:focus {
   color: #FA6E37;
 }
 
-.visible {
-  display: block;
-}
-
-.invisible {
-  display: none;
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 h1 {
@@ -626,22 +628,35 @@ p {
   font-weight: 400;
 }
 
-.clients-block {
-  margin-bottom: 70px;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
-.clients-block h2 {
-  margin-bottom: 30px;
-}
-
-.clients-slider__container {
+.clients-carousel {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
   display: flex;
-  align-items: baseline;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
 }
-
-.clients-slide {
-  margin-right: 63px;
+.clients-carousel:before, .clients-carousel:after {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  content: "";
+}
+.clients-carousel__logo {
+  display: flex;
+  animation: 60s slide infinite linear;
+}
+.clients-carousel__logo-img {
+  margin: 0 32px;
+  height: 66px;
 }
 
 h1 {
@@ -752,6 +767,9 @@ p {
   font-weight: 400;
 }
 
+.footer {
+  padding: 70px 240px;
+}
 .footer__container {
   display: flex;
   justify-content: space-between;
@@ -760,36 +778,34 @@ p {
 }
 .footer__info {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.footer__info-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-.footer__info a[href^="mailto:"], .footer__info a[href^="tel:"] {
+.footer__info-item_link {
   font-size: 17px;
   color: #fff;
   transition: 0.2s;
 }
-.footer__info a[href^="mailto:"]:hover, .footer__info a[href^="tel:"]:hover {
+.footer__info-item_link:hover {
   color: #F47746;
   text-decoration: none;
   transition: 0.2s;
 }
-.footer__info a[href^="mailto:"]:active, .footer__info a[href^="tel:"]:active {
+.footer__info-item_link:active {
   color: #E2612E;
   text-decoration: none;
 }
-.footer__info a[href^="tel:"] {
+.footer__info-item_link:first-child {
   font-size: 19px;
 }
-.footer__info__icons {
-  fill: #CCCCCC;
+.footer__icons {
+  display: flex;
+  gap: 30px;
 }
-.footer__info__icons-button:hover {
+.footer__icons-button:hover {
+  text-decoration: none;
   cursor: pointer;
-  fill: #F47746;
-}
-.footer__info__icons-button:not(:last-child) {
-  margin-right: 30px;
 }
 .footer__links {
   color: #999999;
@@ -799,7 +815,7 @@ p {
 .footer__links-copyright {
   font-size: 14px;
 }
-.footer__links_policy .footer__links_mini-text:not(:last-child) {
+.footer__links-policy .footer__links_mini-text:not(:last-child) {
   margin-right: 15px;
 }
 .footer__links_mini-text {

@@ -1,21 +1,38 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.clients-block {
-    margin-bottom: 70px;
-    h2 {
-        margin-bottom: 30px;
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
     }
 }
 
-.clients-slider__container {
+.clients-carousel {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
     display: flex;
-    align-items: baseline;
-    justify-content: center;
-    width: 100%;
-}
+    align-items: center;
 
-.clients-slide {
-    margin-right: 63px;
-    
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        content: "";
+    }
+
+    &__logo {
+        display: flex;
+        animation: 60s slide infinite linear;
+
+        &-img {
+            margin: 0 32px;
+            height: 66px;
+        }
+    }
 }

@@ -184,11 +184,8 @@ p {
   font-weight: 400;
 }
 
-header {
+.header {
   background-color: #232323;
-}
-
-.header-wrapper {
   padding: 20px 240px;
   display: flex;
   justify-content: space-between;
@@ -196,13 +193,11 @@ header {
   font-size: 19px;
   font-weight: 600;
 }
-
 .header__nav-list {
   list-style-type: none;
   display: flex;
   gap: 40px;
 }
-
 .header__nav-list_item {
   transition: 0.2s;
 }
@@ -214,7 +209,6 @@ header {
 .header__nav-list_item:active {
   color: #E2612E;
 }
-
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;

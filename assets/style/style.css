@@ -689,6 +689,7 @@ p {
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 30px;
+  transition: 0.5s;
 }
 .qa-block__question {
   cursor: pointer;
@@ -700,14 +701,14 @@ p {
 }
 .qa-block__question-title:hover {
   color: #FA6E37;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .qa-block__question-icon {
   transform: rotate(45deg);
 }
 .qa-block__question-icon:hover {
   fill: #FA6E37;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .qa-block__answer {
   max-height: 0;
@@ -721,7 +722,7 @@ p {
 }
 .qa-block__faq.active .qa-block__question-icon {
   transform: rotate(-45deg);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 h1 {

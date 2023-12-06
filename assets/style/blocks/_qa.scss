@@ -6,14 +6,12 @@
         margin-bottom: 30px;
     }
 
-    &__container {  
-    }
-
     &__faq {
         background-color: $MainDarkGrey;
         border-radius: 5px;
         padding: 30px;
         margin-bottom: 30px;
+        transition: 0.5s
     }
 
     &__question {
@@ -26,16 +24,18 @@
         
         &-title:hover {
             color: $Accent;
-            transition: 0.2s;
+            transition: 0.5s
         }
+        
         &-icon {
             transform: rotate(45deg);
             &:hover {
                 fill: $Accent;
-                transition: 0.2s;
+                transition: 0.5s
             }
         }
     }
+
     &__answer {
         max-height: 0;
         overflow: hidden;
@@ -50,7 +50,7 @@
 
     &__faq.active &__question-icon {
         transform: rotate(-45deg);
-        transition: 1s
+        transition: 0.5s
     }
 }
   

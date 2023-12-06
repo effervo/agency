@@ -181,39 +181,46 @@
                 </div>
 
                 <div class="info-block__slider-controls">
-                    <svg class="arrow-control-left" width="52" height="53"><use xlink:href="#arrow"></use></svg>
-                    <svg class="arrow-control-right" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                    <div class="swiper-button-prev">
+                        <svg width="52" height="53" >
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="52" height="53">
+                            <use xlink:href="#arrow"></use>
+                        </svg>  
+                    </div>
                 </div>
             </div>
-            
-            <div class="info-block__slider-container">
 
-                <!-- стахановец slide -->
-                <div class="slider-case">
-                    <div class="slider-case__info">
-                        <div class="slider-case__title">
-                            <h3>Стахановец.рф</h3>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiper-container">
+
+                            <div class="slider-case__info">
+                                <h3 class="slider-case__title">Стахановец.рф</h3>
+                                <ul class="slider-case__list">
+                                    <li class="slider-case__list-item">UI/UX Дизайн</li>
+                                    <li class="slider-case__list-item">SEO</li>
+                                    <li class="slider-case__list-item">Фирменный стиль</li>
+                                </ul>
+                            </div>
+
+                            <button class="btn slider-case__btn">Оставить заявку</button>
                         </div>
-
-                        <ul class="slider-case__list">
-                            <li class="slider-case__list-item">Разработка сайта</li>
-                            <li class="slider-case__list-item">SEO</li>
-                            <li class="slider-case__list-item">Реклама в интернете</li>
-                        </ul>
-
-                        <div class="slider-case__btn">
-                            <button class="btn">Оставить заявку</button>
+                        <div class="slider-case__img">
+                            <img class="responsive" src="assets/img/cases_slide1.png">
                         </div>
                     </div>
 
-                    <div class="slider-case__img">
-                        <img src="assets/img/cases_slide1.png" alt="Стахановец.рф">
+                    <div class="swiper-slide">
+                    </div>
+                    <div class="swiper-slide">
                     </div>
                 </div>
-
-                
-                <!-- fulfillment -->
-                <!-- mr bolt -->
             </div>
         </div>
     </section>

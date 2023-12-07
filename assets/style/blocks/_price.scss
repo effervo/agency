@@ -25,7 +25,31 @@
 
 // tablet
 @media (max-width: 1024px) {
+    .info-block {
+        &__subtext {
+            text-transform: uppercase;
+            margin: 20px 0 30px;
+        
+            text-decoration: line-through $Accent 2px;
+        }
 
+        &__title {
+            margin-bottom: 15px;
+        }
+    
+        &__desc-price {
+            color: $LightGrey;
+        }
+    
+        &__bg-price {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+    
+            max-width: 46px;
+            max-height: 46px;
+        }
+    }
 }
 
 // phone

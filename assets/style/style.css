@@ -523,6 +523,37 @@ p .mini-text {
   right: 35px;
 }
 
+@media (max-width: 1024px) {
+  .main-block__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-block__info_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .main-block__info_text-desc {
+    max-width: 230px;
+    margin-right: 20px;
+  }
+  .main-block__illustra {
+    margin: 60px 0;
+    position: relative;
+    width: 100%;
+    height: 212px;
+  }
+  .main-block__illustra-img img {
+    width: 100%;
+  }
+  .main-block__illustra-icon {
+    position: absolute;
+    z-index: 5;
+    top: -70px;
+    right: 35px;
+  }
+}
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;
@@ -609,6 +640,10 @@ p .mini-text {
   color: #999999;
   margin: 0 100px 0 40px;
 }
+.info-block__row {
+  display: flex;
+  gap: 20px;
+}
 .info-block__element {
   background-color: #232323;
   border: 1px solid #3A3A3A;
@@ -640,9 +675,50 @@ p .mini-text {
 }
 
 @media (max-width: 1024px) {
-  .row {
+  .info-block__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  .info-block__text-desc {
+    display: none;
+  }
+  .info-block__row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .info-block__element {
+    background-color: #232323;
+    border: 1px solid #3A3A3A;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    flex: 1 1 0px;
+    position: relative;
+  }
+  .info-block__element_abotus {
+    padding: 20px 20px 70px;
+  }
+  .info-block__content {
+    margin-right: 0;
+    z-index: 5;
+  }
+  .info-block__title {
+    margin-bottom: 30px;
+  }
+  .info-block__desc {
+    color: #fff;
+    margin-right: 5px;
+  }
+  .info-block__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
   }
 }
 @media (max-width: 576px) {
@@ -744,6 +820,27 @@ p .mini-text {
   max-height: 120px;
 }
 
+@media (max-width: 1024px) {
+  .info-block__subtext {
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+    -webkit-text-decoration: line-through #FA6E37 2px;
+            text-decoration: line-through #FA6E37 2px;
+  }
+  .info-block__title {
+    margin-bottom: 15px;
+  }
+  .info-block__desc-price {
+    color: #CCCCCC;
+  }
+  .info-block__bg-price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 46px;
+    max-height: 46px;
+  }
+}
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;
@@ -909,6 +1006,78 @@ p .mini-text {
   border-radius: 0 10px 10px 0;
 }
 
+@media (max-width: 1024px) {
+  .info-block__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #232323;
+    border: 0;
+    border-radius: 10px;
+  }
+  .swiper-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 286px;
+    text-align: left;
+  }
+  .swiper-info__title {
+    margin-bottom: 20px;
+  }
+  .swiper-info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 69px;
+  }
+  .swiper-info__list-item {
+    list-style-position: inside;
+    background-image: url(../../img/list.png);
+    background-position: 0 0;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+  }
+  .swiper-info__list-item::marker {
+    color: #FA6E37;
+  }
+  .swiper-info__btn {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .swiper-img {
+    position: relative;
+    width: 100%;
+  }
+  .swiper-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0 10px 10px 0;
+  }
+}
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 68px;

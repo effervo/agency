@@ -32,7 +32,7 @@
     }
 
     &__content {
-        margin-right: 22px;
+        // margin-right: 22px;
         z-index: 5;
     }
 
@@ -109,7 +109,8 @@
             bottom: 0;
             right: 0;
             z-index: 0;
-            width: 100%;
+            width: 50%;
+            height: 100%;
         }
         
     }

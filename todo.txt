@@ -1,0 +1,7 @@
+- main page trippin @ 375px
+- no img in slider at 375
+- accordion arrows @ media size
+
+- footer icon hover color with div bg
+- main icon hover color with div bg n div border
+- list marker style

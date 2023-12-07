@@ -10,7 +10,8 @@
 
     &__cover {
         margin: 100px 0;
-        max-height: 340px;
+        height: 340px;
+        width: 874px;
     }
 
     &__title {
@@ -27,20 +28,23 @@
 // tablet
 @media (max-width: 1024px) {
     .pnf-main {
-        padding: 120px auto;
+        padding: 20px auto;
         display: flex;
         flex-direction: column;
+        gap: 30px;
+        justify-content: center;
         align-items: center;
         text-align: center;
     
         &__cover {
-            margin: 100px 0;
-            max-height: 340px;
+            margin: 50px 0;
+            height: 130px;
+            width: 343px;
         }
     
         &__title {
-            font-size: 68px;
-            line-height: 80px;
+            font-size: 28px;
+            line-height: 33px;
             text-transform: uppercase;
         }
     

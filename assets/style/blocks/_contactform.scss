@@ -1,32 +1,23 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
-.contact-block__content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.contact-block {
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
 }
 
-.contact-block__text {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-block__title {
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form__input-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    width: 100%;
-}
 
 .input {
     font-family: inherit;
@@ -58,36 +49,110 @@
     }
 }
 
-.contact-form__input {
-    flex: 1 1 0px;
-    min-width: 340px;
-    width: 100%;
-}
-.contact-form__input_wide {
-    width: 709px;
-}
+.contact-form {
+    &__input-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        width: 100%;
+    }
 
-.contact-form__btn {
-    margin: 10px 0;
+    &__input {
+        flex: 1 1 0px;
+        min-width: 340px;
+        width: 100%;
+    }
+    &__input_wide {
+        width: 709px;
+    }
+    
+    &__btn {
+        margin: 10px 0;
+    }
+    
+    &__desc {
+        color: $LightGrey;
+        font-size: 14px;
+    }   
 }
-
-.contact-form__desc {
-    color: $LightGrey;
-    font-size: 14px;
-}   
 
 // tablet
 @media (max-width: 1024px) {
-    .row {
-        display: flex;
-        flex-direction: column;
+    .contact-block {
+        &__content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 349px;
+        }
+    }
+    
+    
+    .input {
+        font-family: inherit;
+        font-size: 17px;
+        margin: 0;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid $MainWhite;
+        width: max-content;
+        background: none;
+        color: $MainWhite;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 30px;
+        transition: 0.2s;
+    
+        &:hover {
+            background-color: $DarkGrey;
+            transition: 0.2s;
+        }
+    
+        &:focus {
+            outline: none;
+            background-color: $DarkGrey;
+        }
+    
+        &[value] {
+            color: $Grey;
+        }
+    }
+    
+    .contact-form {
+        &__input-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+        }
+    
+        &__input {
+            flex: 1 1 0px;
+            width: 349px;
+        }
+        &__input_wide {
+            width: 349px;
+        }
+        
+        &__btn {
+            margin: 15px 0;
+        }
+        
+        &__desc {
+            color: $LightGrey;
+            font-size: 12px;
+        }   
     }
 }
 
 // phone
 @media (max-width: 576px) {
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
+
 }

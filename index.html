@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/style/fancybox-bundle.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <!-------------- scripts -------------->
     <script defer src="assets/scripts/swiper-bundle.min.js"></script>
     <script defer src="assets/scripts/script.js"></script>
     <script defer src="assets/scripts/accordion.js"></script>
     <script defer src="assets/scripts/menu-burger.js"></script>
+    <script src="assets/scripts/fancybox.umd.js"></script>
 </head>
 <body>
 
@@ -61,7 +63,9 @@
                         Это выведет продажи на новый уровень и позволит компании масштабироваться</p>
                 </div>
                 <div class="">
-                    <button>Оставить заявку</button>
+                    <a href="assets/img/pop-up_desktop.png" data-fancybox>
+                        <button>Оставить заявку</button>
+                    </a>
                     
                 </div>
             </div>
@@ -516,6 +520,13 @@
             <a class="footer__links_mini-text" href="#">Карта сайта</a>
         </div>
     </footer>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+          // custom options
+          hideScrollbar: false,
+        });
+    </script>
 
     <!-------------- svgs -------------->
     <svg class="svg__invisible">

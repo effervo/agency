@@ -11,24 +11,54 @@ h1 {
     font-size: 68px;
     font-weight: $bold;
     text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+    }
+    
+    @media (max-width: 576px) {
+    }
 }
 h2 {
     font-family: $MainFont;
     font-size: 44px;
     font-weight: $med;
+
+    @media (max-width: 1024px) {
+    }
+
+    @media (max-width: 576px) {
+    }
 }
 h3 {
     font-family: $MainFont;
     font-size: 30px;
     font-weight: $med;
+
+    @media (max-width: 1024px) {
+    }
+
+    @media (max-width: 576px) {
+    }
 }
 h4 {
     font-family: $MainFont;
     font-size: 19px;
     font-weight: $semiBold;
+
+    @media (max-width: 1024px) {
+    }
+
+    @media (max-width: 576px) {
+    }
 }
 p {
     font-family: $MainFont;
     font-size: 17px;
     font-weight: $regular;
+
+    @media (max-width: 1024px) {
+    }
+
+    @media (max-width: 576px) {
+    }
 }

@@ -76,14 +76,62 @@
                 </div>
 
                 <div class="">
-                    <a href="assets/img/pop-up_desktop.png" data-fancybox data-src="hidden-form">
+                    <a data-fancybox data-src="#popup-form">
                         <button>Оставить заявку</button>
                     </a>
                     
-                    <div style="display: none;" id="#hidden-form">
-                        <form action="aaa">
-                            <input type="text">
-                        </form>
+
+                    <!-- POP UP FORM -->
+                    <div class="popup-form__container" style="display: none;" id="popup-form">
+                        <div class="popup-form__text">
+                            <h3 class="popup-form__title">
+                                Запишитесь на бесплатную консультацию
+                            </h3>
+                            <p class="popup-form__desc">
+                                Подскажем, какой вариант подойдет именно вам
+                            </p>
+                        </div>
+            
+                        <div class="popup-form__content">
+
+                            <form action="">
+                                <div class="popup-form__input">
+                                    <input required class="input" type="text" placeholder="ИМЯ">
+                                </div>
+                                <div class="popup-form__input">
+                                    <input required class="input" type="tel" placeholder="+7 (900) 000-00-00">
+                                </div>
+                                <div class="popup-form__input">
+                                    <input required class="input" type="email" placeholder="Example@mail.ru">
+                                </div>
+
+                                <div class="popup-form__input">
+                                    <input data-fancybox data-src="#popup-form-accept" type="submit" class="btn" value="Оставить заявку">
+                                </div>
+                            </form>
+            
+                            <p class="popup-form__subtext">
+                                Нажимая кнопку “Оставить заявку”, вы даете согласие на обработку своих персональных данных на основании политики конфиденциальности.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- POP UP ACCEPT -->
+                    <div class="popup-form__container" style="display: none;" id="popup-form-accept">
+                        <h3 class="popup-form__accept_title">Заявка принята</h3>
+                        <div class="popup-form__accept_text-container">
+
+                            <div class="popup-form__accept-icon">
+                                <img src="assets/img/succes.png" alt="">
+                            </div>
+
+                            <div class="popup-form__accept-text">
+                                <h4 class="">Спасибо!</h4>
+                                <p class="popup-form__accept-mini">Менеджер свяжется с вами в течение часа</p>
+                            </div>
+                        </div>
+
+                        <button class="popup-form__button">Закрыть</button>
                     </div>
                 </div>
             </div>

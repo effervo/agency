@@ -117,8 +117,61 @@
 
 // phone
 @media (max-width: 576px) {
-    .row {
-        display: flex;
-        flex-direction: column;
+    .info-block {
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            max-width: 500px;
+        
+            &-desc {
+                display: none;
+            }
+        }
+
+        
+        &__row {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    
+        &__element {
+            background-color: $MainDarkGrey;
+            border: 1px solid $DarkGrey;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            flex: 1 1 0px;
+            position: relative;
+            &_abotus {
+                padding: 20px 20px 70px;
+            }
+        }
+    
+        &__content {
+            margin-right: 0;
+            z-index: 5;
+        }
+    
+        &__title {
+            margin-bottom: 30px;
+        }
+    
+        &__desc {
+            color: $MainWhite;
+            margin-right: 5px;
+        }
+    
+        &__bg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            width: 100%;
+        }
+        
     }
 }

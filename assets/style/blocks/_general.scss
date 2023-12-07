@@ -109,16 +109,16 @@ img {
     .wrapper {
         padding: 40px 30px;
     }
-    
-    .mob{
-        display: block;
-    }
-
-    .web{
-        display: none;
-    }
 
     button, .btn {
         padding: 15px 40px;
+    }
+}
+
+// phone 
+
+@media (max-width:576px) {
+    .wrapper {
+        padding: 40px 20px;
     }
 }

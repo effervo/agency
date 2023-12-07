@@ -190,5 +190,87 @@
 
 // phone
 @media (max-width: 576px) {
-
+    .info-block {
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 40px;
+            position: relative;
+        }
+    }
+    
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    
+    .swiper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &-slide{
+            display: flex;
+            flex-direction: column-reverse;
+            height: 426px;
+            border-radius: 10px;
+            background-color: $MainDarkGrey;
+            border: 0;
+            border-radius: 10px;
+        }
+    
+        &-container{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-width: 286px;
+            text-align: left;
+        }
+    
+        &-info {
+            &__title {
+                margin-bottom: 20px;
+            }
+    
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 69px;
+                &-item {
+                    list-style-position: inside;
+                    background-image: url(../../img/list.png);
+                    background-position: 0 0;
+                    background-size: 12px 12px;
+                    background-repeat: no-repeat;
+    
+                    &::marker{
+                        color: $Accent;
+                    }
+                }
+            }
+    
+            &__btn {
+                width: min-content;
+            }
+    
+        }
+        
+        &-img {
+            position: relative;
+            width: 100%;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
 }

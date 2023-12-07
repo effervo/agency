@@ -97,37 +97,6 @@
         }
     }
     
-    
-    .input {
-        font-family: inherit;
-        font-size: 17px;
-        margin: 0;
-        padding: 15px;
-        border-radius: 5px;
-        border: 1px solid $MainWhite;
-        width: max-content;
-        background: none;
-        color: $MainWhite;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom: 30px;
-        transition: 0.2s;
-    
-        &:hover {
-            background-color: $DarkGrey;
-            transition: 0.2s;
-        }
-    
-        &:focus {
-            outline: none;
-            background-color: $DarkGrey;
-        }
-    
-        &[value] {
-            color: $Grey;
-        }
-    }
-    
     .contact-form {
 
         margin-left: 40px;
@@ -155,5 +124,42 @@
 
 // phone
 @media (max-width: 576px) {
+    .contact-block {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 370px;
+        }
+    }
+    
+    
+    .input {
+        font-size: 14px;
+        color: $MainWhite;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
 
+    }
+    
+    .contact-form {
+        margin: 30px 0;
+        &__input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        &__input {
+            flex: 1 1 0px;
+            width: 300px;
+        } 
+    }
 }

@@ -59,7 +59,35 @@
   
 // tablet
 @media (max-width: 1024px) {
-
+    .qa-block {
+        &__title {
+            margin-bottom: 30px;
+        }
+    
+        &__faq {
+            background-color: $MainDarkGrey;
+            border-radius: 5px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: 0.5s
+        }
+    
+        &__question {
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            &-icon {
+                transform: rotate(45deg);
+                fill: $MainWhite;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
 }
 
 // phone

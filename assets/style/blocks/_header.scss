@@ -126,14 +126,5 @@
 @media (max-width: 576px) {
     .header {
         padding: 20px 16px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        &__nav-list {
-            list-style-type: none;
-            display: flex;
-            gap: 40px;
-        }
     }
 }

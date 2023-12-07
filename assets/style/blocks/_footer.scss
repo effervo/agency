@@ -162,5 +162,30 @@
 
 // phone
 @media (max-width: 576px) {
+    .footer {
+        &__info {
+            &-item {
+                font-size: 14px;
+                &_link {
+                    font-size: 14px;
+                }
+            }
+        }
 
+        &__icons {
+            display: none;
+        }
+
+        &__links {
+            &-copyright {
+                font-size: 12px;
+            }
+            &-policy {
+                font-size: 12px;
+            }
+            &_mini-text {
+                font-size: 12px;
+            }
+        }
+    }
 }

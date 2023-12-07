@@ -22,35 +22,47 @@
 
     <!-------------- ! header -------------->
     <header class="header">
+        
         <div class="header__logo">
-            <a href="#"><img src="assets/img/logo.png" alt="AgencyUX"></a>
+          <a href="#"><img src="assets/img/logo.png" alt="AgencyUX"></a>
         </div>
-
-        <div class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-list_item">
-                    <a class="header__nav-list_item-link" href="#">О компании</a>
-                </li>
-                <li class="header__nav-list_item">
-                    <a class="header__nav-list_item-link" href="#">Услуги</a>
-                </li>
-                <li class="header__nav-list_item">
-                    <a class="header__nav-list_item-link" href="#">Кейсы</a>
-                </li>
-                <li class="header__nav-list_item">
-                    <a class="header__nav-list_item-link" href="#">Блог</a>
-                </li>
-                <li class="header__nav-list_item">
-                    <a class="header__nav-list_item-link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-
+        
+        <a href="#" class="header__toggle-button">
+          <span class="header__toggle-button_bar"></span>
+          <span class="header__toggle-button_bar"></span>
+          <span class="header__toggle-button_bar"></span>
+        </a>
+        
+        <ul class="header__nav-list">
+            <li class="header__nav-list_item">
+                <a class="header__nav-list_item-link" href="#">О компании</a>
+            </li>
+            <li class="header__nav-list_item">
+                <a class="header__nav-list_item-link" href="#">Услуги</a>
+            </li>
+            <li class="header__nav-list_item">
+                <a class="header__nav-list_item-link" href="#">Кейсы</a>
+            </li>
+            <li class="header__nav-list_item">
+                <a class="header__nav-list_item-link" href="#">Блог</a>
+            </li>
+            <li class="header__nav-list_item">
+                <a class="header__nav-list_item-link" href="#">Контакты</a>
+            </li>
+            <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-tel" href="#">
+                +7 (995) 960-50-70
+            </li>
+            <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-location" href="#">
+                г. Владимир, ул. Горького, д.50, оф. 5-06
+            </li>
+        </ul>
+        
         <div class="header__btn">
             <button>
                 +7 (995) 960-50-70
             </button>
         </div>
+        
     </header>
 
     <!-------------- ! main page -------------->
@@ -64,10 +76,15 @@
                 </div>
 
                 <div class="">
-                    <a href="assets/img/pop-up_desktop.png" data-fancybox>
+                    <a href="assets/img/pop-up_desktop.png" data-fancybox data-src="hidden-form">
                         <button>Оставить заявку</button>
                     </a>
                     
+                    <div style="display: none;" id="#hidden-form">
+                        <form action="aaa">
+                            <input type="text">
+                        </form>
+                    </div>
                 </div>
             </div>
     

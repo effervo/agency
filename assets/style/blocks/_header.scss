@@ -6,6 +6,7 @@
     padding: 20px 240px;
     display: flex;
     justify-content: space-between;
+    position: relative;
     align-items: center;
     font-size: 19px;
     font-weight: $semiBold;
@@ -14,12 +15,19 @@
         list-style-type: none;
         display: flex;
         gap: 40px;
+        height: 100%;
 
         &_item {
             transition: 0.2s;
+            font-size: 19px;
+
+            &_mob {
+                display: none;
+            }
 
             &-link {
                 color: $MainWhite;
+                display: block;
                 &:hover {
                     cursor: pointer;
                     color: $AccentHover;
@@ -32,6 +40,24 @@
             }
         }
     }
+
+    &__toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+
+        &_bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+    }
 }
 
 // tablet
@@ -39,9 +65,17 @@
     .header {
         background-color: $MainBlack;
         padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        &__toggle-button {
+            display: flex;
+        }
 
         &__logo {
             img {
@@ -50,9 +84,40 @@
         }
         
         &__nav-list {
-            list-style-type: none;
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+
+            &_item {
+                text-align: center;
+                justify-content: center;
+                font-size: 14px;
+                font-weight: $regular;
+
+                &_mob {
+                    display: block;
+
+                    &-tel {
+                        font-size: 19px;
+                        font-weight: $semiBold;
+                    }
+                }
+
+                &-link {
+                    margin-bottom: 0px;
+                }
+            }
+
+        }
+
+        &__nav-list.active {
             display: flex;
-            gap: 40px;
+        }
+
+
+        &__btn {
+            display: none;
         }
     }
 }

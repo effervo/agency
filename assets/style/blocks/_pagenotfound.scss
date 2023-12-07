@@ -26,7 +26,28 @@
 
 // tablet
 @media (max-width: 1024px) {
-
+    .pnf-main {
+        padding: 120px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        &__cover {
+            margin: 100px 0;
+            max-height: 340px;
+        }
+    
+        &__title {
+            font-size: 68px;
+            line-height: 80px;
+            text-transform: uppercase;
+        }
+    
+        .pnf-main__item {
+            margin-top: 40px;
+        }
+    }
 }
 
 // phone

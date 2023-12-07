@@ -82,3 +82,43 @@ button, .btn {
 img {
     user-select: none;
 }
+
+.mob{
+    display: none;
+}
+
+.web{
+    display: block;
+}
+
+// tablet
+@media (max-width:1024px) {
+
+    body {
+        background-color: $MainBlack;
+        color: $MainWhite;
+        font-family: $MainFont;
+        letter-spacing: 1px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        padding: 40px 20px;
+    }
+    
+    .mob{
+        display: block;
+    }
+
+    .web{
+        display: none;
+    }
+
+    button, .btn {
+        padding: 15px 40px;
+    }
+}

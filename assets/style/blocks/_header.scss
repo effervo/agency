@@ -32,10 +32,39 @@
             }
         }
     }
+}
 
-    @media (max-width: 1024px) {
+// tablet
+@media (max-width: 1024px) {
+    .header {
+        background-color: $MainBlack;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        font-weight: $semiBold;
+        
+        &__nav-list {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+        }
     }
+}
 
-    @media (max-width: 576px) {
+// phone
+@media (max-width: 576px) {
+    .header {
+        padding: 20px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__nav-list {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+        }
     }
 }

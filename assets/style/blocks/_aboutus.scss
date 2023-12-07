@@ -49,8 +49,7 @@
     
 }
 
-// мобильная версия
-
+// tablet
 @media (max-width: 1024px) {
     .row {
         display: flex;
@@ -58,6 +57,7 @@
     }
 }
 
+// phone
 @media (max-width: 576px) {
     .row {
         display: flex;

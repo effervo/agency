@@ -75,3 +75,19 @@
     color: $LightGrey;
     font-size: 14px;
 }   
+
+// tablet
+@media (max-width: 1024px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// phone
+@media (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}

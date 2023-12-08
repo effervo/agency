@@ -33,11 +33,52 @@
                 width: 100%;
             }
         }
+
         &-icon {
             position: absolute;
             z-index: 5;
             top: -70px;
             right: 35px;
+
+            width: 143px;
+            height: 143px;
+
+            border: 5px solid $Accent;
+            border-radius: 100%;
+            padding: 12px;
+
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                border-color: $AccentHover;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+            &:focus {
+                border-color: $AccentFocus;
+                transition: 0.2s;
+            }
+
+            &_bg {
+                width: 77px;
+                height: 77px;
+
+                padding: 10px;
+                background-color: $MainDarkGrey;
+                border-radius: 100%;
+
+                &:hover {
+                    background-color: $AccentHover;
+                    transition: 0.2s;
+                }
+                &:focus {
+                    background-color: $AccentFocus;
+                    transition: 0.2s;
+                }
+            }
         }
     }
 }
@@ -74,10 +115,9 @@
                 }
             }
             &-icon {
-                position: absolute;
-                z-index: 5;
                 top: -70px;
-                right: 35px;
+                right: -25px;
+                transform: scale(50%);
             }
         }
     }

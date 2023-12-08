@@ -60,50 +60,51 @@
 // tablet
 @media (max-width: 1024px) {
     .qa-block {
-        &__title {
-            margin-bottom: 30px;
-        }
-    
-        &__faq {
-            background-color: $MainDarkGrey;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 15px;
-        }
-    
         &__question {
-    
+            &-title {
+                margin-bottom: 0px;
+                max-width: 490px;
+            }
+
             &-icon {
                 transform: scale(80%) rotate(45deg);
             }
-        }
-        &__faq.active &__question-icon {
-            transform: scale(80%) rotate(-45deg);
-            transition: 0.5s
-        }
-    }
-}
-
-// phone
-@media (max-width: 576px) {
-    .qa-block {
-        &__title {
-            margin-bottom: 30px;
         }
     
         &__faq {
             padding: 15px;
             margin-bottom: 10px;
         }
-    
+
+        &__faq.active &__question-icon {
+            transform: scale(80%) rotate(-45deg);
+            transition: 0.5s
+        }
+    } 
+}
+
+// phone
+@media (max-width: 576px) {
+    .qa-block {
+        &__question {
+            &-title {
+                margin-bottom: 0px;
+                max-width: 230px;
+            }
+
             &-icon {
                 transform: scale(50%) rotate(45deg);
             }
         }
-        
-        // &__faq.active &__question-icon {
-        //     transform: scale(50%) rotate(-45deg);
-        //     transition: 0.5s
-        // }
-            
+    
+        &__faq {
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        &__faq.active &__question-icon {
+            transform: scale(50%) rotate(-45deg);
+            transition: 0.5s
+        }
+    } 
 }

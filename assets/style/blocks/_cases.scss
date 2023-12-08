@@ -72,6 +72,7 @@
             flex-direction: column;
             gap: 15px;
             margin-bottom: 220px;
+            list-style-type: "🟠" ;
             &-item {
                 list-style-position: inside;
                 background-image: url(../../img/list.png);
@@ -79,9 +80,9 @@
                 background-size: 12px 12px;
                 background-repeat: no-repeat;
 
-                &::marker{
-                    color: $Accent;
-                }
+                // &::marker{
+                //     color: $Accent;
+                // }
             }
         }
 
@@ -168,17 +169,6 @@
                 flex-direction: column;
                 gap: 10px;
                 margin-bottom: 69px;
-                &-item {
-                    list-style-position: inside;
-                    background-image: url(../../img/list.png);
-                    background-position: 0 0;
-                    background-size: 12px 12px;
-                    background-repeat: no-repeat;
-    
-                    &::marker{
-                        color: $Accent;
-                    }
-                }
             }
     
             &__btn {

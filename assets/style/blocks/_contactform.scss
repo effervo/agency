@@ -50,6 +50,8 @@
 }
 
 .contact-form {
+    margin-left: 145px;
+    max-width: 709px;
     &__input-container {
         display: flex;
         justify-content: space-between;
@@ -90,6 +92,7 @@
             flex-direction: column;
             gap: 30px;
             max-width: 370px;
+            // margin-right: 190px;
         }
 
         &__title {
@@ -99,7 +102,6 @@
     
     .contact-form {
 
-        margin-left: 40px;
         &__input-container {
             display: flex;
             flex-direction: column;
@@ -109,6 +111,10 @@
         &__input {
             flex: 1 1 0px;
             width: 340px;
+
+            &_wide {
+                width: 709;
+            }
         }
         
         &__btn {

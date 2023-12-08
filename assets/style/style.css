@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
@@ -576,9 +577,17 @@ p .mini-text {
 }
 
 @media (max-width: 576px) {
+  .fancybox__track {
+    display: flex;
+    margin: 0 0;
+    height: 100%;
+  }
   .fancybox__content {
     padding: 40px;
     max-width: 343px;
+  }
+  .fancybox__slide {
+    margin: 0 0 0 0;
   }
   .fancybox__slide::before, .fancybox__slide::after {
     content: "";
@@ -726,6 +735,39 @@ p .mini-text {
   z-index: 5;
   top: -70px;
   right: 35px;
+  width: 143px;
+  height: 143px;
+  border: 5px solid #FA6E37;
+  border-radius: 100%;
+  padding: 12px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-block__illustra-icon:hover {
+  border-color: #F47746;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.main-block__illustra-icon:focus {
+  border-color: #E2612E;
+  transition: 0.2s;
+}
+.main-block__illustra-icon_bg {
+  width: 77px;
+  height: 77px;
+  padding: 10px;
+  background-color: #232323;
+  border-radius: 100%;
+}
+.main-block__illustra-icon_bg:hover {
+  background-color: #F47746;
+  transition: 0.2s;
+}
+.main-block__illustra-icon_bg:focus {
+  background-color: #E2612E;
+  transition: 0.2s;
 }
 
 @media (max-width: 1024px) {
@@ -756,10 +798,9 @@ p .mini-text {
     width: 100%;
   }
   .main-block__illustra-icon {
-    position: absolute;
-    z-index: 5;
     top: -70px;
-    right: 35px;
+    right: -25px;
+    transform: scale(50%);
   }
 }
 @media (max-width: 576px) {
@@ -1261,6 +1302,7 @@ p .mini-text {
   flex-direction: column;
   gap: 15px;
   margin-bottom: 220px;
+  list-style-type: "🟠";
 }
 .swiper-info__list-item {
   list-style-position: inside;
@@ -1268,9 +1310,6 @@ p .mini-text {
   background-position: 0 0;
   background-size: 12px 12px;
   background-repeat: no-repeat;
-}
-.swiper-info__list-item::marker {
-  color: #FA6E37;
 }
 .swiper-info__btn {
   width: -moz-min-content;
@@ -1339,16 +1378,6 @@ p .mini-text {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 69px;
-  }
-  .swiper-info__list-item {
-    list-style-position: inside;
-    background-image: url(../../img/list.png);
-    background-position: 0 0;
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-  }
-  .swiper-info__list-item::marker {
-    color: #FA6E37;
   }
   .swiper-info__btn {
     width: -moz-min-content;
@@ -1559,6 +1588,10 @@ p .mini-text {
   color: #999999;
 }
 
+.contact-form {
+  margin-left: 145px;
+  max-width: 709px;
+}
 .contact-form__input-container {
   display: flex;
   justify-content: space-between;
@@ -1596,9 +1629,6 @@ p .mini-text {
   .contact-block__title {
     margin-bottom: 0px;
   }
-  .contact-form {
-    margin-left: 40px;
-  }
   .contact-form__input-container {
     display: flex;
     flex-direction: column;
@@ -1607,6 +1637,9 @@ p .mini-text {
   .contact-form__input {
     flex: 1 1 0px;
     width: 340px;
+  }
+  .contact-form__input_wide {
+    width: 709;
   }
   .contact-form__btn {
     margin: 15px 0;
@@ -1893,17 +1926,16 @@ p .mini-text {
 }
 
 @media (max-width: 1024px) {
-  .qa-block__title {
-    margin-bottom: 30px;
-  }
-  .qa-block__faq {
-    background-color: #232323;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 15px;
+  .qa-block__question-title {
+    margin-bottom: 0px;
+    max-width: 490px;
   }
   .qa-block__question-icon {
     transform: scale(80%) rotate(45deg);
+  }
+  .qa-block__faq {
+    padding: 15px;
+    margin-bottom: 10px;
   }
   .qa-block__faq.active .qa-block__question-icon {
     transform: scale(80%) rotate(-45deg);
@@ -1911,15 +1943,20 @@ p .mini-text {
   }
 }
 @media (max-width: 576px) {
-  .qa-block__title {
-    margin-bottom: 30px;
+  .qa-block__question-title {
+    margin-bottom: 0px;
+    max-width: 230px;
+  }
+  .qa-block__question-icon {
+    transform: scale(50%) rotate(45deg);
   }
   .qa-block__faq {
     padding: 15px;
     margin-bottom: 10px;
   }
-  .qa-block-icon {
-    transform: scale(50%) rotate(45deg);
+  .qa-block__faq.active .qa-block__question-icon {
+    transform: scale(50%) rotate(-45deg);
+    transition: 0.5s;
   }
 }
 h1 {

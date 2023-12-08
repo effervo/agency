@@ -64,10 +64,20 @@
 // phone
 @media (max-width: 576px) {
     .fancybox {
+
+        &__track {
+            display: flex;
+            margin: 0 0;
+            height: 100%;
+        }
         
         &__content {
             padding: 40px;
             max-width: 343px;
+        }
+
+        &__slide {
+            margin: 0 0 0 0;
         }
 
         &__slide::before, &__slide::after {

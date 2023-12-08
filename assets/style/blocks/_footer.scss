@@ -43,9 +43,21 @@
         gap: 30px;
 
         &-button {
+            fill: $DarkGrey;
+            transition: 0.2s;
+            background-color: $LightGrey;
+            padding: 16px;
+            border: none;
+            border-radius: 5px;
             &:hover {
+                fill: $MainWhite;
                 text-decoration: none;
                 cursor: pointer;
+                transition: 0.2s;
+                background-color: $AccentHover;
+            }
+            &:focus {
+                background-color: $AccentFocus;
             }
         }
     }

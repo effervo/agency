@@ -2034,9 +2034,23 @@ p .mini-text {
   display: flex;
   gap: 30px;
 }
+.footer__icons-button {
+  fill: #3A3A3A;
+  transition: 0.2s;
+  background-color: #CCCCCC;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+}
 .footer__icons-button:hover {
+  fill: #fff;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.2s;
+  background-color: #F47746;
+}
+.footer__icons-button:focus {
+  background-color: #E2612E;
 }
 .footer__links {
   color: #999999;

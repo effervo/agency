@@ -1,6 +1,8 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
+
+
 .qa-block {
     &__title {
         margin-bottom: 30px;
@@ -13,7 +15,6 @@
         margin-bottom: 30px;
         transition: 0.5s
     }
-
     &__question {
         cursor: pointer;
         width: 100%;

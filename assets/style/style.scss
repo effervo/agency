@@ -1,19 +1,19 @@
 // primary styles
-@use "blocks/colors";
-@use "blocks/fonts";
+@import "blocks/colors";
+@import "blocks/fonts";
 
 // landing styles
-@use "blocks/general";
-@use "blocks/header";
-@use "blocks/popup";
-@use "blocks/main";
-@use "blocks/aboutus";
-@use "blocks/price";
-@use "blocks/cases";
-@use "blocks/contactform";
-@use "blocks/clients";
-@use "blocks/qa";
-@use "blocks/footer";
+@import "blocks/general";
+@import "blocks/header";
+@import "blocks/popup";
+@import "blocks/main";
+@import "blocks/aboutus";
+@import "blocks/price";
+@import "blocks/cases";
+@import "blocks/contactform";
+@import "blocks/clients";
+@import "blocks/qa";
+@import "blocks/footer";
 
 // other pages styles
-@use "blocks/pagenotfound";
+@import "blocks/pagenotfound";

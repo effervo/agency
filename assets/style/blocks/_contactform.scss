@@ -1,6 +1,7 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
+
 .contact-block {
     &__content {
         display: flex;
@@ -61,11 +62,7 @@
 
     &__input {
         flex: 1 1 0px;
-        min-width: 340px;
         width: 100%;
-    }
-    &__input_wide {
-        width: 709px;
     }
     
     &__btn {

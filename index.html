@@ -23,44 +23,46 @@
     <!-------------- ! header -------------->
     <header class="header">
         
-        <div class="header__logo">
-          <a href="#"><img src="assets/img/logo.png" alt="AgencyUX"></a>
-        </div>
-        
-        <a href="#" class="header__toggle-button">
-          <span class="header__toggle-button_bar"></span>
-          <span class="header__toggle-button_bar"></span>
-          <span class="header__toggle-button_bar"></span>
-        </a>
-        
-        <ul class="header__nav-list">
-            <li class="header__nav-list_item">
-                <a class="header__nav-list_item-link" href="#">О компании</a>
-            </li>
-            <li class="header__nav-list_item">
-                <a class="header__nav-list_item-link" href="#">Услуги</a>
-            </li>
-            <li class="header__nav-list_item">
-                <a class="header__nav-list_item-link" href="#">Кейсы</a>
-            </li>
-            <li class="header__nav-list_item">
-                <a class="header__nav-list_item-link" href="#">Блог</a>
-            </li>
-            <li class="header__nav-list_item">
-                <a class="header__nav-list_item-link" href="#">Контакты</a>
-            </li>
-            <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-tel" href="#">
-                +7 (995) 960-50-70
-            </li>
-            <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-location" href="#">
-                г. Владимир, ул. Горького, д.50, оф. 5-06
-            </li>
-        </ul>
-        
-        <div class="header__btn">
-            <button>
-                +7 (995) 960-50-70
-            </button>
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#"><img src="assets/img/logo.png" alt="AgencyUX"></a>
+              </div>
+              
+              <a href="#" class="header__toggle-button">
+                <span class="header__toggle-button_bar"></span>
+                <span class="header__toggle-button_bar"></span>
+                <span class="header__toggle-button_bar"></span>
+              </a>
+              
+              <ul class="header__nav-list">
+                  <li class="header__nav-list_item">
+                      <a class="header__nav-list_item-link" href="#">О компании</a>
+                  </li>
+                  <li class="header__nav-list_item">
+                      <a class="header__nav-list_item-link" href="#">Услуги</a>
+                  </li>
+                  <li class="header__nav-list_item">
+                      <a class="header__nav-list_item-link" href="#">Кейсы</a>
+                  </li>
+                  <li class="header__nav-list_item">
+                      <a class="header__nav-list_item-link" href="#">Блог</a>
+                  </li>
+                  <li class="header__nav-list_item">
+                      <a class="header__nav-list_item-link" href="#">Контакты</a>
+                  </li>
+                  <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-tel" href="#">
+                      +7 (995) 960-50-70
+                  </li>
+                  <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-location" href="#">
+                      г. Владимир, ул. Горького, д.50, оф. 5-06
+                  </li>
+              </ul>
+              
+              <div class="header__btn">
+                  <button >
+                      <a href="tel:+79959605070">+7 (995) 960-50-70</a>
+                  </button>
+              </div>
         </div>
         
     </header>
@@ -138,10 +140,6 @@
             </div>
     
             <div class="main-block__illustra">
-    
-                <!-- <svg class="main-block__illustra-icon" width="143" height="144">
-                    <use xlink:href="#main-slide-icon"></use>
-                </svg>  -->
 
                 <div class="main-block__illustra-icon">
                     <div class="main-block__illustra-icon_bg">
@@ -478,7 +476,7 @@
                         <h3 class="qa-block__question-title">
                         У меня уже есть оффлайн-бизнес, зачем мне онлайн-реклама?</h3>
                         
-                        <svg class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                        <svg viewBox="0 0 52 53" class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                     </div>
 
                     <!-- ответ -->
@@ -495,7 +493,7 @@
                             Я не уверен в эффективности интернет-маркетинга для моей отрасли
                         </h3>
                         
-                        <svg class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                        <svg viewBox="0 0 52 53" class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                     </div>
 
                     <!-- ответ -->
@@ -512,7 +510,7 @@
                             Я не знаю, с чего начать, это может быть сложно
                         </h3>
                         
-                        <svg class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                        <svg viewBox="0 0 52 53" class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                     </div>
 
                     <!-- ответ -->
@@ -529,7 +527,7 @@
                             Мы уже обращались в похожие компании, а результата не получили
                         </h3>
                         
-                        <svg class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
+                        <svg viewBox="0 0 52 53" class="qa-block__question-icon" id="accordion-btn" width="52" height="53"><use xlink:href="#arrow"></use></svg>
                     </div>
 
                     <!-- ответ -->
@@ -598,91 +596,6 @@
 
     <!-------------- svgs -------------->
     <svg class="svg__invisible">
-        <!-- main slider -->
-        <symbol id="main-slide-icon" fill="none">
-            <rect x="2.5" y="3.48486" width="138" height="138" rx="69" stroke="#FA6E37" stroke-width="5"/>
-            <rect x="33" y="33.9849" width="77" height="77" rx="38.5" fill="#232323"/>
-            <g clip-path="url(#clip0_204_16421)">
-            <path d="M62.7703 84.7816C62.7705 84.4587 62.8988 84.149 63.1272 83.9206C63.3556 83.6922 63.6653 83.5638 63.9882 83.5636L81.7281 83.5622L58.5303 60.3644C58.3017 60.1358 58.1733 59.8258 58.1733 59.5026C58.1733 59.1793 58.3017 58.8693 58.5303 58.6408C58.7588 58.4122 59.0688 58.2838 59.3921 58.2838C59.7153 58.2838 60.0253 58.4122 60.2538 58.6408L83.4517 81.8386L83.4531 64.0988C83.4643 63.7832 83.5975 63.4842 83.8247 63.2649C84.0519 63.0456 84.3553 62.923 84.6711 62.923C84.9869 62.923 85.2904 63.0456 85.5176 63.2649C85.7448 63.4842 85.878 63.7832 85.8891 64.0988L85.8891 84.7816C85.8889 85.1046 85.7605 85.4143 85.5321 85.6427C85.3038 85.871 84.9941 85.9994 84.6711 85.9996L63.9882 85.9996C63.6653 85.9994 63.3556 85.871 63.1272 85.6427C62.8988 85.4143 62.7705 85.1046 62.7703 84.7816Z" fill="white"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_204_16421">
-            <rect width="52" height="52" fill="white" transform="translate(46 43.9849)"/>
-            </clipPath>
-            </defs>
-        </symbol>
-
-        <!-- info block element 1 -->
-        <symbol id="info-block-el1" fill="none">
-            <path d="M1 263.985L152.11 178.059C153.238 177.418 154.649 177.574 155.61 178.446L217.609 234.722C218.46 235.495 219.677 235.713 220.743 235.285L289.143 207.829C289.701 207.605 290.179 207.218 290.515 206.719L428.5 1.48486" stroke="#FFB092"/>
-            <path d="M28.5 264.985L152.589 177.974C153.463 177.362 154.596 177.259 155.566 177.705L270.3 230.512C271.978 231.285 273.949 230.371 274.445 228.592L297.775 144.793C297.922 144.264 298.211 143.786 298.611 143.411L437.5 12.9849" stroke="#FF8F63"/>
-            <path d="M67.5 266.985L152.421 178.137C153.354 177.161 154.824 176.929 156.012 177.569L279.21 243.943C281.048 244.933 283.311 243.789 283.603 241.722L297.368 144.415C297.454 143.809 297.723 143.245 298.138 142.796L429.5 0.984863" stroke="#FA6E37"/>
-            <circle cx="154" cy="177.985" r="4.5" stroke="#FA6E37"/>
-            <g filter="url(#filter0_f_443_38)">
-            <circle cx="154" cy="177.985" r="2" fill="#FA6E37"/>
-            </g>
-            <circle cx="154" cy="177.985" r="2" fill="#FA6E37"/>
-            <circle cx="298" cy="143.985" r="4.5" stroke="#FA6E37"/>
-            <g filter="url(#filter1_f_443_38)">
-            <circle cx="298" cy="143.985" r="2" fill="#FA6E37"/>
-            </g>
-            <circle cx="298" cy="143.985" r="2" fill="#FA6E37"/>
-            <defs>
-            <filter id="filter0_f_443_38" x="143" y="166.985" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="4.5" result="effect1_foregroundBlur_443_38"/>
-            </filter>
-            <filter id="filter1_f_443_38" x="287" y="132.985" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="4.5" result="effect1_foregroundBlur_443_38"/>
-            </filter>
-            </defs>
-        </symbol>
-
-        <!-- info block element 2 -->
-        <symbol id="info-block-el2" fill="none">
-            <path d="M178.471 54.8458H123.108C117.586 54.8458 113.108 59.323 113.108 64.8458V229.355H234.529C240.052 229.355 244.529 224.878 244.529 219.355V113.367" stroke="#FFC8B3" stroke-opacity="0.18" stroke-dasharray="9 9"/>
-            <path d="M178.46 17.8342C178.46 15.0728 180.698 12.8342 183.46 12.8342H274C276.761 12.8342 279 15.0728 279 17.8342V108.375C279 111.136 276.761 113.375 274 113.375H178.46V17.8342Z" fill="#FA6E37" fill-opacity="0.37"/>
-            <path d="M259.816 101.025V101.525H252.991V101.025H246.167V101.525H239.343V101.025H232.518V101.525H225.694V101.025H218.87V101.525H212.045V101.025H205.221V101.525H198.397V101.025H191.572V101.525H184.748V101.025H177.924V101.525H171.1V101.025H168.187V98.1133H167.687V91.2889H168.187V84.4646H167.687V77.6403H168.187V70.8159H167.687V63.9916H168.187V57.1673H167.687V50.343H168.187V43.5187H167.687V36.6943H168.187V29.87H167.687V23.0457H168.187V16.2214H167.687V9.39703H168.187V5.98486C168.187 5.37378 168.309 4.79234 168.529 4.26245L168.067 4.07093C168.574 2.84872 169.551 1.87109 170.773 1.36427L170.965 1.82613C171.495 1.60639 172.076 1.48486 172.687 1.48486H176.46V0.984863H184.005V1.48486H191.55V0.984863H199.095V1.48486H206.64V0.984863H214.185V1.48486H221.73V0.984863H229.275V1.48486H236.82V0.984863H244.365V1.48486H251.91V0.984863H259.455V1.48486H263.228C263.839 1.48486 264.42 1.60639 264.95 1.82613L265.142 1.36427C266.364 1.87109 267.342 2.84872 267.848 4.07092L267.387 4.26245C267.606 4.79234 267.728 5.37378 267.728 5.98486V9.75739H268.228V17.3024H267.728V24.8475H268.228V32.3925H267.728V39.9376H268.228V47.4826H267.728V55.0277H268.228V62.5727H267.728V70.1177H268.228V77.6628H267.728V85.2078H268.228V92.7529H267.728V96.5254C267.728 97.1365 267.606 97.7179 267.387 98.2478L267.848 98.4393C267.342 99.6615 266.364 100.639 265.142 101.146L264.95 100.684C264.42 100.904 263.839 101.025 263.228 101.025H259.816Z" stroke="#733F2A" stroke-dasharray="7 7"/>
-            <circle cx="146.622" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="155" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="163.379" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="171.757" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="180.136" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="188.514" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="196.892" cy="77.3478" r="3.35135" fill="#FA6E37"/>
-            <circle cx="138.363" cy="199.313" r="3.35135" transform="rotate(90 138.363 199.313)" fill="#4B413D"/>
-            <circle cx="83.4244" cy="209.008" r="3.35135" transform="rotate(90 83.4244 209.008)" fill="#4B413D"/>
-            <circle cx="23.22" cy="219.78" r="3.35135" transform="rotate(90 23.22 219.78)" fill="#4B413D"/>
-            <circle cx="128.428" cy="199.313" r="3.35135" transform="rotate(90 128.428 199.313)" fill="#4B413D"/>
-            <circle cx="73.4901" cy="209.008" r="3.35135" transform="rotate(90 73.4901 209.008)" fill="#4B413D"/>
-            <circle cx="13.2856" cy="219.78" r="3.35135" transform="rotate(90 13.2856 219.78)" fill="#4B413D"/>
-            <circle cx="118.494" cy="199.313" r="3.35135" transform="rotate(90 118.494 199.313)" fill="#4B413D"/>
-            <circle cx="63.5558" cy="209.008" r="3.35135" transform="rotate(90 63.5558 209.008)" fill="#4B413D"/>
-            <circle cx="3.35135" cy="219.78" r="3.35135" transform="rotate(90 3.35135 219.78)" fill="#4B413D"/>
-            <circle cx="108.56" cy="199.313" r="3.35135" transform="rotate(90 108.56 199.313)" fill="#4B413D"/>
-            <circle cx="53.6214" cy="209.008" r="3.35135" transform="rotate(90 53.6214 209.008)" fill="#4B413D"/>
-            <circle cx="98.6254" cy="199.313" r="3.35135" transform="rotate(90 98.6254 199.313)" fill="#4B413D"/>
-            <circle cx="43.6871" cy="209.008" r="3.35135" transform="rotate(90 43.6871 209.008)" fill="#4B413D"/>
-            <circle cx="88.6911" cy="199.313" r="3.35135" transform="rotate(90 88.6911 199.313)" fill="#4B413D"/>
-            <circle cx="33.7528" cy="209.008" r="3.35135" transform="rotate(90 33.7528 209.008)" fill="#4B413D"/>
-            <circle cx="78.7568" cy="199.313" r="3.35135" transform="rotate(90 78.7568 199.313)" fill="#4B413D"/>
-            <circle cx="23.8185" cy="209.008" r="3.35135" transform="rotate(90 23.8185 209.008)" fill="#4B413D"/>
-        </symbol>
-
-        <!-- info block element 3 -->
-        <symbol id="info-block-el3" fill="none">
-            <path d="M1 196.985V190.485C1 183.857 6.37258 178.485 13 178.485H196.5C199.814 178.485 202.5 175.799 202.5 172.485V127.485C202.5 120.857 207.873 115.485 214.5 115.485H236.5C239.814 115.485 242.5 112.799 242.5 109.485V12.9849C242.5 6.35745 247.873 0.984863 254.5 0.984863H269.5" stroke="#FA6E37"/>
-            <path d="M8 190.985V188.985C8 186.776 9.79086 184.985 12 184.985H197.5C204.127 184.985 209.5 179.612 209.5 172.985V128.485C209.5 125.171 212.186 122.485 215.5 122.485H239.5C246.127 122.485 251.5 117.112 251.5 110.485V18.9849C251.5 15.6712 254.186 12.9849 257.5 12.9849H276.5" stroke="#FD6225" stroke-dasharray="2 2"/>
-            <path d="M15 196.985V194.985C15 192.776 16.7909 190.985 19 190.985H204.5C211.127 190.985 216.5 185.612 216.5 178.985V134.485C216.5 131.171 219.186 128.485 222.5 128.485H246.5C253.127 128.485 258.5 123.112 258.5 116.485V24.9849C258.5 21.6712 261.186 18.9849 264.5 18.9849H283.5" stroke="#FF6D33" stroke-width="0.7" stroke-dasharray="2 2"/>
-            <path d="M22 202.985V200.985C22 198.776 23.7909 196.985 26 196.985H211.5C218.127 196.985 223.5 191.612 223.5 184.985V140.485C223.5 137.171 226.186 134.485 229.5 134.485H253.5C260.127 134.485 265.5 129.112 265.5 122.485V30.9849C265.5 27.6712 268.186 24.9849 271.5 24.9849H290.5" stroke="#FF8454" stroke-width="0.4" stroke-dasharray="2 2"/>
-            <path d="M27 207.985V205.985C27 203.776 28.7909 201.985 31 201.985H216.5C223.127 201.985 228.5 196.612 228.5 189.985V145.485C228.5 142.171 231.186 139.485 234.5 139.485H258.5C265.127 139.485 270.5 134.112 270.5 127.485V35.9849C270.5 32.6712 273.186 29.9849 276.5 29.9849H295.5" stroke="#FF8454" stroke-width="0.3" stroke-dasharray="2 2"/>
-            <path d="M33 212.985V210.985C33 208.776 34.7909 206.985 37 206.985H222.5C229.127 206.985 234.5 201.612 234.5 194.985V150.485C234.5 147.171 237.186 144.485 240.5 144.485H264.5C271.127 144.485 276.5 139.112 276.5 132.485V40.9849C276.5 37.6712 279.186 34.9849 282.5 34.9849H301.5" stroke="#FF8454" stroke-width="0.2" stroke-dasharray="2 2"/>
-            <path d="M39 217.985V215.985C39 213.776 40.7909 211.985 43 211.985H228.5C235.127 211.985 240.5 206.612 240.5 199.985V155.485C240.5 152.171 243.186 149.485 246.5 149.485H270.5C277.127 149.485 282.5 144.112 282.5 137.485V45.9849C282.5 42.6712 285.186 39.9849 288.5 39.9849H307.5" stroke="#FF8454" stroke-width="0.1" stroke-dasharray="2 2"/>
-            <path d="M44 222.985V220.985C44 218.776 45.7909 216.985 48 216.985H233.5C240.127 216.985 245.5 211.612 245.5 204.985V160.485C245.5 157.171 248.186 154.485 251.5 154.485H275.5C282.127 154.485 287.5 149.112 287.5 142.485V50.9849C287.5 47.6712 290.186 44.9849 293.5 44.9849H312.5" stroke="#FF8454" stroke-width="0.09" stroke-dasharray="2 2"/>
-        </symbol>
 
         <!-- arrows -->
         <symbol id="arrow">

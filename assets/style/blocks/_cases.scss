@@ -72,17 +72,20 @@
             flex-direction: column;
             gap: 15px;
             margin-bottom: 220px;
-            list-style-type: "🟠" ;
             &-item {
-                list-style-position: inside;
-                background-image: url(../../img/list.png);
-                background-position: 0 0;
-                background-size: 12px 12px;
-                background-repeat: no-repeat;
+                list-style: none;
+                display: flex;
+                align-items: center;
 
-                // &::marker{
-                //     color: $Accent;
-                // }
+                &::before {
+                    content: "";
+                    display: block;
+                    background: $Accent;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    width: 12px;
+                    height: 12px;
+                }
             }
         }
 
@@ -169,6 +172,15 @@
                 flex-direction: column;
                 gap: 10px;
                 margin-bottom: 69px;
+
+                &-item {
+    
+                    &::before {
+                        margin-right: 7px;
+                        width: 7px;
+                        height: 7px;
+                    }
+                }
             }
     
             &__btn {
@@ -233,7 +245,8 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            min-width: 286px;
+            // min-width: 286px;
+            height: 290px;
             text-align: left;
         }
     
@@ -246,7 +259,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                margin-bottom: 69px;
+                margin-bottom: 50px;
                 &-item {
                     list-style-position: inside;
                     background-image: url(../../img/list.png);

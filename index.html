@@ -17,6 +17,8 @@
     <script defer src="assets/scripts/accordion.js"></script>
     <script defer src="assets/scripts/menu-burger.js"></script>
     <script src="assets/scripts/fancybox.umd.js"></script>
+    <script defer src="assets/scripts/imask-pluginb.js"></script>
+    <script defer src="assets/scripts/mask.js"></script>
 </head>
 <body>
 
@@ -102,7 +104,7 @@
                                     <input required class="input" type="text" placeholder="ИМЯ">
                                 </div>
                                 <div class="popup-form__input">
-                                    <input required class="input" type="tel" placeholder="+7 (900) 000-00-00">
+                                    <input required class="input" id="phone-mask" type="text" placeholder="+7 (900) 000-00-00">
                                 </div>
                                 <div class="popup-form__input">
                                     <input required class="input" type="email" placeholder="Example@mail.ru">
@@ -592,7 +594,7 @@
           // custom options
           hideScrollbar: false,
         });
-    </script>
+    </script> 
 
     <!-------------- svgs -------------->
     <svg class="svg__invisible">

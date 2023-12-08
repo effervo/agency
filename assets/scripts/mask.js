@@ -7,5 +7,12 @@ const mask = IMask(
     {
       mask: '+{7}(000)000-00-00'
     }
-  );
+);
+
+const contactform = IMask(
+    document.getElementById('phone-mask-contactform'),
+    {
+      mask: '+{7}(000)000-00-00'
+    }
+);
 

@@ -107,10 +107,10 @@
     
         &__input {
             flex: 1 1 0px;
-            width: 340px;
+            // width: 340px;
 
             &_wide {
-                width: 709;
+                // width: 709;
             }
         }
         
@@ -121,7 +121,6 @@
         &__desc {
             color: $LightGrey;
             font-size: 12px;
-            max-width: 320px;
         }   
     }
 }

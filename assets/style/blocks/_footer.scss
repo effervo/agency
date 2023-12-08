@@ -168,6 +168,9 @@
                 font-size: 14px;
                 &_link {
                     font-size: 14px;
+                    &:first-child {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -180,10 +183,8 @@
             &-copyright {
                 font-size: 12px;
             }
-            &-policy {
-                font-size: 12px;
-            }
-            &_mini-text {
+
+            &-policy &_mini-text {
                 font-size: 12px;
             }
         }

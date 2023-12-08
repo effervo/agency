@@ -67,30 +67,43 @@
         &__faq {
             background-color: $MainDarkGrey;
             border-radius: 5px;
-            padding: 30px;
-            margin-bottom: 30px;
-            transition: 0.5s
+            padding: 20px;
+            margin-bottom: 15px;
         }
     
         &__question {
-            cursor: pointer;
-            width: 100%;
-            transition: 0.2s;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
     
             &-icon {
-                transform: rotate(45deg);
-                fill: $MainWhite;
-                width: 25px;
-                height: 25px;
+                transform: scale(80%) rotate(45deg);
             }
+        }
+        &__faq.active &__question-icon {
+            transform: scale(80%) rotate(-45deg);
+            transition: 0.5s
         }
     }
 }
 
 // phone
 @media (max-width: 576px) {
-
+    .qa-block {
+        &__title {
+            margin-bottom: 30px;
+        }
+    
+        &__faq {
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+    
+            &-icon {
+                transform: scale(50%) rotate(45deg);
+            }
+        }
+        
+        // &__faq.active &__question-icon {
+        //     transform: scale(50%) rotate(-45deg);
+        //     transition: 0.5s
+        // }
+            
 }

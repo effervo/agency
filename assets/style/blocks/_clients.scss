@@ -44,7 +44,26 @@
 
 // phone
 @media (max-width: 576px) {
-    .clients-carousel__logo {
-        height: 46px;
+    .info-block__title {
+        margin-bottom: 0px;
+        &.wrapper {
+            padding: 0px 20px;
+        }
     }
+
+    .clients-carousel {
+        padding: 30px 0;
+
+        &__logo {
+
+            &-img {
+    
+                img {
+                    height: 50px;
+                }
+            }
+        }
+    }
+    
+    
 }   

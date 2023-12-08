@@ -41,6 +41,10 @@
     justify-content: space-between;
     align-items: center;
 
+    &-pagination {
+        display: none;
+    }
+
     &-slide{
         display: flex;
         justify-content: space-between;
@@ -103,6 +107,8 @@
 // tablet
 @media (max-width: 1024px) {
 
+    
+
     .info-block {
         &__header {
             display: flex;
@@ -126,6 +132,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &-pagination {
+            display: block;
+
+            &-bullet-active {
+                background-color: $Accent;
+            }
+        }
     
         &-slide{
             display: flex;
@@ -169,6 +183,7 @@
     
             &__btn {
                 width: min-content;
+                margin-bottom: 30px;
             }
     
         }

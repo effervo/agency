@@ -16,10 +16,11 @@
                 <a href="#"><img src="../img/logo.png" alt="AgencyUX"></a>
               </div>
               
-              <a href="#" class="header__toggle-button">
-                <span class="header__toggle-button_bar"></span>
-                <span class="header__toggle-button_bar"></span>
-                <span class="header__toggle-button_bar"></span>
+              <a href="#" onclick="toggleIcon()" class="header__toggle-button">
+                <svg id="toggle-button__js" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use id="header-icon_open" xlink:href="#burger-open"></use>
+                    <use id="header-icon_close" class="display-none" xlink:href="#burger-close"></use>
+                </svg>
               </a>
               
               <ul class="header__nav-list">
@@ -38,8 +39,8 @@
                   <li class="header__nav-list_item">
                       <a class="header__nav-list_item-link" href="#">Контакты</a>
                   </li>
-                  <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-tel" href="#">
-                      +7 (995) 960-50-70
+                  <li href="tel:+79959605070" class="header__nav-list_item header__nav-list_item_mob">
+                       <a class="header__nav-list_item_mob-tel" href="tel:+79959605070">+7 (995) 960-50-70</a>
                   </li>
                   <li class="header__nav-list_item header__nav-list_item_mob header__nav-list_item_mob-location" href="#">
                       г. Владимир, ул. Горького, д.50, оф. 5-06
@@ -126,6 +127,18 @@
     </footer>
 
     <svg class="svg__invisible">
+
+        <!-- menu -->
+        <!-- burger -->
+        <symbol id="burger-open">
+            <rect x="2" y="5" width="20" height="2" rx="1" fill="#D9D9D9"/>
+            <rect x="2" y="11" width="20" height="2" rx="1" fill="#D9D9D9"/>
+            <rect x="2" y="17" width="20" height="2" rx="1" fill="#D9D9D9"/>
+        </symbol>
+        <!-- cross -->
+        <symbol id="burger-close">
+            <path d="M20 20L4 4M20 4L4 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
 
         <!-- tg icon -->
         <symbol id="tg-icon">

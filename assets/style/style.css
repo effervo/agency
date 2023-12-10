@@ -991,12 +991,10 @@ p .mini-text {
   background-color: #232323;
   border: 1px solid #3A3A3A;
   border-radius: 10px;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
   padding: 30px;
-  flex: 1 1 0px;
+  flex: 1 1 100%;
   position: relative;
 }
 .info-block__content {
@@ -1069,7 +1067,7 @@ p .mini-text {
     overflow: hidden;
   }
 }
-@media (max-width: 686px) {
+@media (max-width: 700px) {
   .info-block__text {
     display: flex;
     justify-content: space-between;
@@ -1092,6 +1090,7 @@ p .mini-text {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    flex: none !important;
     position: relative;
   }
   .info-block__element_abotus {
@@ -1968,6 +1967,10 @@ p .mini-text {
 .qa-block__question-icon {
   transform: rotate(45deg);
   fill: #fff;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
 }
 .qa-block__question:hover .qa-block__question-icon {
   fill: #FA6E37;
@@ -1994,34 +1997,42 @@ p .mini-text {
 }
 
 @media (max-width: 1024px) {
-  .qa-block__question-title {
-    margin: 0 40px 0 0;
-  }
   .qa-block__question-icon {
-    transform: scale(80%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    margin: 0 0 0 30px;
+    min-width: 40px;
+    min-height: 40px;
   }
   .qa-block__faq {
     padding: 15px;
     margin-bottom: 10px;
   }
   .qa-block__faq.active .qa-block__question-icon {
-    transform: scale(80%) rotate(-45deg);
+    width: 40px;
+    height: 40px;
+    transform: rotate(-45deg);
     transition: 0.5s;
   }
 }
 @media (max-width: 576px) {
-  .qa-block__question-title {
-    margin: 0 20px 0 0;
-  }
   .qa-block__question-icon {
-    transform: scale(50%) rotate(45deg);
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    margin: 0 0 0 15px;
+    min-width: 25px;
+    height: 25px;
   }
   .qa-block__faq {
     padding: 15px;
     margin-bottom: 10px;
   }
   .qa-block__faq.active .qa-block__question-icon {
-    transform: scale(50%) rotate(-45deg);
+    width: 25px;
+    height: 25px;
+    transform: rotate(-45deg);
     transition: 0.5s;
   }
 }

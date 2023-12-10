@@ -32,7 +32,6 @@
     }
 
     &__content {
-        // margin-right: 22px;
         z-index: 5;
     }
 
@@ -46,13 +45,14 @@
     }
 
     &__bg {
+
+        // object-fit: contain;
+        // overflow: hidden; 
+
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: 0;
-
-    //    object-fit: contain;
-    //     overflow: hidden; 
     }
     
 }

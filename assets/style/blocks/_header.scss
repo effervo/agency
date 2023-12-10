@@ -1,6 +1,7 @@
 @import "_colors.scss"; 
 @import "_fonts.scss"; 
 
+
 .header {
     background-color: $MainDarkGrey;
     padding: 20px;
@@ -82,15 +83,10 @@
         background-color: $MainBlack;
         padding: 20px;
 
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
         &__container {
-            // display: flex;
-            // justify-content: center;
             align-items: flex-start;
-        //    justify-content: center;
+            justify-content: space-between;
+            flex: 0 0 100%;
         }
 
         &__toggle-button {
@@ -145,12 +141,5 @@
         &__btn {
             display: none;
         }
-    }
-}
-
-// phone
-@media (max-width: 576px) {
-    .header {
-        padding: 20px 16px;
     }
 }

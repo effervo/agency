@@ -1,2 +1,0 @@
-- moblie too wide
-- list marker style

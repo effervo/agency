@@ -25,12 +25,19 @@ body {
     justify-content: center;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+.display-none {
+    display: none;
+}
+
 .wrapper {
-    padding: 70px 70px;
+    padding: 40px 20px;
     margin: 0 auto;
     
     width: 100%;
-    max-width: 1440px;
+    max-width: 1480px;
 }
 
 .svg {

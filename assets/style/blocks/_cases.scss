@@ -19,9 +19,6 @@
     &:hover{
         color: $AccentHover;
     }
-    &:focus{
-        color: $AccentFocus;
-    }
     
 }
 .swiper-button-next {
@@ -29,9 +26,6 @@
     color: $MainWhite;
     &:hover{
         color: $AccentHover;
-    }
-    &:focus{
-        color: $AccentFocus;
     }
 }
 

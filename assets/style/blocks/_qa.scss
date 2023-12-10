@@ -63,8 +63,7 @@
     .qa-block {
         &__question {
             &-title {
-                margin-bottom: 0px;
-                max-width: 490px;
+                margin: 0 40px 0 0;
             }
 
             &-icon {
@@ -89,8 +88,7 @@
     .qa-block {
         &__question {
             &-title {
-                margin-bottom: 0px;
-                max-width: 230px;
+                margin: 0 20px 0 0;
             }
 
             &-icon {

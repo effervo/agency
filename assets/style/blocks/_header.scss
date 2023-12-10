@@ -91,7 +91,8 @@
 
         &__toggle-button {
             display: flex;
-            margin-left: 100px;
+            // margin-left: 100px;
+
         }
 
         &__logo {
@@ -115,13 +116,16 @@
                 max-width: 700px;
 
                 &_mob {
-                    display: block;
+                    display: flex;
+                    gap: 20px;
+                    
 
                     &-tel {
                         font-size: 19px;
                         font-weight: $semiBold;
                         color: $MainWhite;
                         white-space: nowrap;
+                        margin-top: 50px;
                     }
                 }
 
@@ -134,7 +138,15 @@
 
         &__nav-list.active {
             display: flex;
+            gap: 20px;
             justify-content: space-between;
+            position: absolute;
+            height: calc(100vh - 70px);
+            background: $MainBlack;
+            z-index: 10;
+            left: 0;
+            top: 40px;
+            padding: 20px 20px 450px;
         }
 
 

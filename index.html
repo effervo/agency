@@ -30,10 +30,10 @@
                 <a href="#"><img src="assets/img/logo.png" alt="AgencyUX"></a>
               </div>
               
-              <a href="#" class="header__toggle-button">
-                <span class="header__toggle-button_bar"></span>
-                <span class="header__toggle-button_bar"></span>
-                <span class="header__toggle-button_bar"></span>
+              <a href="#" onclick="toggleIcon()" class="header__toggle-button">
+                <svg id="toggle-button__js" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use id="toggle__js-icon" xlink:href="#burger-open"></use>
+                </svg>
               </a>
               
               <ul class="header__nav-list">
@@ -111,7 +111,7 @@
                                 </div>
 
                                 <div class="popup-form__input">
-                                    <input data-fancybox data-src="#popup-form-accept" type="submit" class="btn" value="Оставить заявку">
+                                    <input aria-colcount="popup-form__btn" data-fancybox data-src="#popup-form-accept" type="submit" class="btn" value="Оставить заявку">
                                 </div>
                             </form>
             
@@ -136,7 +136,7 @@
                             </div>
                         </div>
 
-                        <button data-fancybox-close="" class="popup-form__button">Закрыть</button>
+                        <button data-fancybox-close="" class="popup-form__button popup-form__button">Закрыть</button>
                     </div>
                 </div>
             </div>
@@ -598,6 +598,20 @@
 
     <!-------------- svgs -------------->
     <svg class="svg__invisible">
+
+        <!-- menu -->
+        <!-- burger -->
+        <symbol id="burger-open">
+            <rect x="2" y="5" width="20" height="2" rx="1" fill="#D9D9D9"/>
+            <rect x="2" y="11" width="20" height="2" rx="1" fill="#D9D9D9"/>
+            <rect x="2" y="17" width="20" height="2" rx="1" fill="#D9D9D9"/>
+        </symbol>
+
+        <symbol id="burger-close">
+            <path d="M20 20L4 4M20 4L4 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- cross -->
 
         <!-- arrows -->
         <symbol id="arrow">
